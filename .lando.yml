@@ -1,0 +1,26 @@
+name: manba
+recipe: drupal9
+config:
+  webroot: web
+  php: '7.4'
+  drush: ^10
+  via: nginx
+  xdebug: false
+
+services:
+  mymail:
+    type: mailhog
+    hogfrom:
+      - appserver
+
+tooling:
+  phpcs:
+    service: appserver
+    description: 'Run phpcs: lando phpcs PATH/TO/CODE'
+    cmd:
+      - '/app/vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,test,profile,theme,js,css,info,txt,md --runtime-set installed_paths /app/vendor/drupal/coder/coder_sniffer'
+  phpcbf:
+    service: appserver
+    description: 'Run phpcbf: lando phpcbf PATH/TO/CODE'
+    cmd:
+      - '/app/vendor/bin/phpcbf --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,test,profile,theme,js,css,info,txt,md --runtime-set installed_paths /app/vendor/drupal/coder/coder_sniffer'
