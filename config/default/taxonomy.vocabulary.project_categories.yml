@@ -1,0 +1,8 @@
+uuid: 7839678c-42b1-4da3-9816-5a19981b8318
+langcode: en
+status: true
+dependencies: {  }
+name: 'Project Categories'
+vid: project_categories
+description: ''
+weight: 0

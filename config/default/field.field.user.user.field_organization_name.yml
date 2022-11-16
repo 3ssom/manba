@@ -1,0 +1,20 @@
+uuid: 2c0fec0b-1a97-4b85-98ef-f2a91518c329
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_organization_name
+  module:
+    - user
+id: user.user.field_organization_name
+field_name: field_organization_name
+entity_type: user
+bundle: user
+label: 'Organization Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

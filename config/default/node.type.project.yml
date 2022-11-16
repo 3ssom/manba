@@ -1,0 +1,17 @@
+uuid: e1db0a7d-daff-4340-beb6-fcb63e225164
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Project
+type: project
+description: 'Here you can add a Project to Projects page.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

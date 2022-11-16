@@ -1,0 +1,24 @@
+uuid: bc6dedfc-9423-4405-a83d-343fa48632a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_university_enrolment_numbe
+  module:
+    - user
+id: user.user.field_university_enrolment_numbe
+field_name: field_university_enrolment_numbe
+entity_type: user
+bundle: user
+label: 'University Enrolment Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

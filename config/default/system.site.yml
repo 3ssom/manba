@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: ar
+uuid: 690a5463-59f2-4f05-8e0c-a18f8b050b69
+name: منبع
+mail: e.alqaie@gmail.com
+slogan: 'منصة البرمجيات المفتوحة المصدر'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

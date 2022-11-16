@@ -1,0 +1,16 @@
+uuid: 669d4a75-d95d-4ad6-8be9-e7353410661a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.close_source_technologies
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.close_source_technologies
+target_entity_type_id: taxonomy_term
+target_bundle: close_source_technologies
+default_langcode: current_interface
+language_alterable: true

@@ -1,0 +1,207 @@
+uuid: c280e73b-df98-46c2-90ab-a10746c2387a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.story.body
+    - field.field.node.story.comment
+    - field.field.node.story.field_a_summary_of_the_organizat
+    - field.field.node.story.field_duration_of_implementation
+    - field.field.node.story.field_estimated_financial_saving
+    - field.field.node.story.field_list_of_close_source_techn
+    - field.field.node.story.field_list_of_open_source_techno
+    - field.field.node.story.field_name_of_the_organization
+    - field.field.node.story.field_non_financial_advantages_d
+    - field.field.node.story.field_other_techniques
+    - field.field.node.story.field_project_date
+    - field.field.node.story.field_story_image
+    - field.field.node.story.field_the_number_of_beneficiarie
+    - field.field.node.story.field_the_number_of_members_of_t
+    - image.style.thumbnail
+    - node.type.story
+  module:
+    - comment
+    - datetime
+    - image
+    - path
+    - text
+id: node.story.default
+targetEntityType: node
+bundle: story
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  comment:
+    type: comment_default
+    weight: 136
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_a_summary_of_the_organizat:
+    type: string_textarea
+    weight: 129
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_duration_of_implementation:
+    type: number
+    weight: 124
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_estimated_financial_saving:
+    type: string_textfield
+    weight: 127
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_list_of_close_source_techn:
+    type: entity_reference_autocomplete
+    weight: 135
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_list_of_open_source_techno:
+    type: entity_reference_autocomplete
+    weight: 134
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_name_of_the_organization:
+    type: string_textfield
+    weight: 123
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_non_financial_advantages_d:
+    type: string_textarea
+    weight: 130
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_other_techniques:
+    type: string_textarea
+    weight: 133
+    region: content
+    settings:
+      rows: 5
+      placeholder: 'Kibana, RabbitMQ, OpenContrail, Saltstack, Maas, Gerrit'
+    third_party_settings: {  }
+  field_project_date:
+    type: datetime_default
+    weight: 131
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_story_image:
+    type: image_image
+    weight: 122
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_the_number_of_beneficiarie:
+    type: number
+    weight: 128
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_the_number_of_members_of_t:
+    type: number
+    weight: 126
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

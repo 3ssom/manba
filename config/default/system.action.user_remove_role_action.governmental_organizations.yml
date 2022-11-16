@@ -1,0 +1,14 @@
+uuid: 0926fd3c-2128-4367-92ca-d0f92b8c00b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.governmental_organizations
+  module:
+    - user
+id: user_remove_role_action.governmental_organizations
+label: 'Remove the Governmental Organizations role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: governmental_organizations

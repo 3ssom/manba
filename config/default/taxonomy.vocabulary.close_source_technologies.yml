@@ -1,0 +1,8 @@
+uuid: 57a8f13b-c77f-4219-a9fe-6d6aa4233c35
+langcode: en
+status: true
+dependencies: {  }
+name: 'Closed Source Technologies'
+vid: close_source_technologies
+description: 'List of close source technologies used'
+weight: 0

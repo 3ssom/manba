@@ -1,0 +1,83 @@
+uuid: 23b81585-15be-4a0e-9342-c8da3813b6f4
+langcode: ar
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.event
+    - node.type.page
+    - node.type.project
+    - node.type.story
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - file
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+_core:
+  default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create event content'
+  - 'create page content'
+  - 'create project content'
+  - 'create story content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete any article content'
+  - 'delete any event content'
+  - 'delete any page content'
+  - 'delete any project content'
+  - 'delete any story content'
+  - 'delete article revisions'
+  - 'delete event revisions'
+  - 'delete own article content'
+  - 'delete own event content'
+  - 'delete own page content'
+  - 'delete own project content'
+  - 'delete own story content'
+  - 'delete page revisions'
+  - 'delete project revisions'
+  - 'delete story revisions'
+  - 'edit any article content'
+  - 'edit any event content'
+  - 'edit any page content'
+  - 'edit any project content'
+  - 'edit any story content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own event content'
+  - 'edit own page content'
+  - 'edit own project content'
+  - 'edit own story content'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert event revisions'
+  - 'revert page revisions'
+  - 'revert project revisions'
+  - 'revert story revisions'
+  - 'view all revisions'
+  - 'view article revisions'
+  - 'view event revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view project revisions'
+  - 'view story revisions'
+  - 'view the administration theme'

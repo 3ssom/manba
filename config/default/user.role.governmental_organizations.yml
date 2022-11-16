@@ -1,0 +1,18 @@
+uuid: b12a565e-474e-4b4a-b775-9d4bc82ca9cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.project
+    - node.type.story
+  module:
+    - node
+id: governmental_organizations
+label: 'Governmental Organizations'
+weight: 8
+is_admin: null
+permissions:
+  - 'create project content'
+  - 'create story content'
+  - 'edit own project content'
+  - 'edit own story content'

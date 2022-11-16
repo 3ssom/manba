@@ -1,0 +1,18 @@
+uuid: ef47307c-cce0-49e3-ba02-9439802fdaea
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.project
+    - node.type.story
+  module:
+    - node
+id: company
+label: Company
+weight: 6
+is_admin: null
+permissions:
+  - 'create project content'
+  - 'create story content'
+  - 'edit own project content'
+  - 'edit own story content'

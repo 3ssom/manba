@@ -1,0 +1,14 @@
+uuid: d8e4a0bd-33f0-46af-87f7-75e8053441f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.support_groups
+  module:
+    - user
+id: user_add_role_action.support_groups
+label: 'Add the Support Groups role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: support_groups

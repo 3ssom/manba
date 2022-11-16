@@ -1,0 +1,29 @@
+uuid: deaefa5d-9d9e-484c-bace-e20a00591f92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_of_open_source_techno
+    - node.type.project
+    - node.type.story
+id: node.story.field_list_of_open_source_techno
+field_name: field_list_of_open_source_techno
+entity_type: node
+bundle: story
+label: 'List Of Open Source Technologies Used'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      project: project
+    sort:
+      field: title
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

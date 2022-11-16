@@ -1,0 +1,39 @@
+uuid: 366b821a-1549-4f67-b56b-4997ef2cdf94
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_academic_certificate
+field_name: field_academic_certificate
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'High School'
+      label: 'High School'
+    -
+      value: Diploma
+      label: Diploma
+    -
+      value: 'Bachelor''s Degree'
+      label: 'Bachelor''s Degree'
+    -
+      value: 'Higher Diploma'
+      label: 'Higher Diploma'
+    -
+      value: Master
+      label: Master
+    -
+      value: PHD
+      label: PHD
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

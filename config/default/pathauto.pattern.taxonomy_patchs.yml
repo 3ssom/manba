@@ -1,0 +1,36 @@
+uuid: 3009ae2c-0f2c-4025-99df-99916ffe5032
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: taxonomy_patchs
+label: 'Taxonomy Patchs'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:vocabulary:name]/[term:name]'
+selection_criteria:
+  396d1a1b-bdd5-43a7-a692-6650ae8b8754:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 396d1a1b-bdd5-43a7-a692-6650ae8b8754
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      close_source_technologies: close_source_technologies
+      project_categories: project_categories
+      software_license: software_license
+  88a1fe0c-825e-44c6-ac90-f3df6014df5b:
+    id: language
+    negate: false
+    uuid: 88a1fe0c-825e-44c6-ac90-f3df6014df5b
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      en: en
+      ar: ar
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language

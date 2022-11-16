@@ -1,0 +1,20 @@
+uuid: 10c24500-d78d-42bf-867e-70b16346dad1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_company_summary
+  module:
+    - user
+id: user.user.field_company_summary
+field_name: field_company_summary
+entity_type: user
+bundle: user
+label: 'Company Summary'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

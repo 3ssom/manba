@@ -1,0 +1,14 @@
+uuid: a896766c-ca8c-4ba9-aea8-1774ca87ad33
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.support_groups
+  module:
+    - user
+id: user_remove_role_action.support_groups
+label: 'Remove the Support Groups role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: support_groups

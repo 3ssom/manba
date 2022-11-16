@@ -1,0 +1,19 @@
+uuid: c1fd027b-784a-4161-a919-6fb1315d658f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_techniques
+    - node.type.story
+id: node.story.field_other_techniques
+field_name: field_other_techniques
+entity_type: node
+bundle: story
+label: 'Other Techniques'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

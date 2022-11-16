@@ -1,0 +1,13 @@
+uuid: dcb52a2d-86c5-4fcc-ba9e-84a48719452f
+langcode: ar
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: sOb26JSy3fGpWkvR0WYN6_hMqj_6d1rvbvrkzp1yya0
+id: node_make_sticky_action
+label: 'Make content sticky'
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

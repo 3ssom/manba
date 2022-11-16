@@ -1,0 +1,23 @@
+uuid: b97aeacf-5021-4b9f-8d6d-b123e4805de6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_location
+    - node.type.event
+  module:
+    - link
+id: node.event.field_event_location
+field_name: field_event_location
+entity_type: node
+bundle: event
+label: 'Event Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

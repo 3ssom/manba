@@ -1,0 +1,29 @@
+uuid: b21023d5-863d-498c-8027-ac061e69618b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_software_license
+    - node.type.project
+    - taxonomy.vocabulary.software_license
+id: node.project.field_software_license
+field_name: field_software_license
+entity_type: node
+bundle: project
+label: 'Software License'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      software_license: software_license
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: b9c4e96d-19fd-4287-aa60-efeb20aa03a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_summary
+  module:
+    - user
+id: user.user.field_summary
+field_name: field_summary
+entity_type: user
+bundle: user
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

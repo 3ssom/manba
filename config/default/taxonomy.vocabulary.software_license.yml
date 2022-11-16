@@ -1,0 +1,8 @@
+uuid: b593a696-1710-4ecf-ab2e-8854505a834f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Software License'
+vid: software_license
+description: 'https://en.wikipedia.org/wiki/Software_license'
+weight: 0

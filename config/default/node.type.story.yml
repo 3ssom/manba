@@ -1,0 +1,17 @@
+uuid: 311c6145-b62b-43cd-b2a1-7d4a31ecdddc
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Story
+type: story
+description: 'Here you can add a story to Success Stories page.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

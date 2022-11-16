@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * @file
+ * Custom module for Manba Core.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+  /**
+ * Perform alterations on language switcher links.
+ *
+ * A language switcher link may need to point to a different path or use a
+ * translated link text before going through the link generator, which will
+ * just handle the path aliases.
+ *
+ * @param array $links
+ *   Nested array of links keyed by language code.
+ * @param string $type
+ *   The language type the links will switch.
+ * @param \Drupal\Core\Url $url
+ *   The URL the switch links will be relative to.
+ */
+function manba_core_language_switch_links_alter(array &$links, $type, \Drupal\Core\Url $url) {
+  $language_interface = \Drupal::languageManager()->getCurrentLanguage();
+  $current_language_id = $language_interface->getId();
+  unset($links[$current_language_id]);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave() for user entities.
+ */
+function manba_core_user_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  $type = $entity->get('field_account_type')->value;
+  if($entity->isNew() && $type == 'student') {
+    $entity->addRole('student');
+  }
+
+  if($entity->isNew() && $type == 'expert') {
+    $entity->addRole('expert');
+  }
+
+  if($entity->isNew() && $type == 'company') {
+    $entity->addRole('company');
+  }
+
+  if($entity->isNew() && $type == 'support_groups') {
+    $entity->addRole('support_groups');
+  }
+
+  if($entity->isNew() && $type == 'governmental_organizations') {
+    $entity->addRole('governmental_organizations');
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function manba_core_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if($form_id == 'user_register_form') {
+    unset($form['field_website']['widget'][0]['uri']['#description']);
+    unset($form['field_linkedin']['widget'][0]['uri']['#description']);
+    unset($form['field_github']['widget'][0]['uri']['#description']);
+    unset($form['field_twitter']['widget'][0]['uri']['#description']);
+  }
+
+}

@@ -1,0 +1,20 @@
+uuid: 9f1e0782-0c48-45ba-92d4-8918ca6b79aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_group_name
+  module:
+    - user
+id: user.user.field_group_name
+field_name: field_group_name
+entity_type: user
+bundle: user
+label: 'Group Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 16f18b66-b4c1-4734-be45-bf8f95084a87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_the_number_of_beneficiarie
+    - node.type.story
+id: node.story.field_the_number_of_beneficiarie
+field_name: field_the_number_of_beneficiarie
+entity_type: node
+bundle: story
+label: 'The Number Of Beneficiaries Of The Aforementioned Systems'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

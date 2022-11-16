@@ -1,0 +1,20 @@
+uuid: f7ec7ea0-e54c-469e-808b-f226e8155cf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_university_level
+  module:
+    - user
+id: user.user.field_university_level
+field_name: field_university_level
+entity_type: user
+bundle: user
+label: 'University Level'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

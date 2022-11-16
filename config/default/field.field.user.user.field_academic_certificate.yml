@@ -1,0 +1,21 @@
+uuid: c3e3a2c4-ce71-4240-b260-e931e054cbef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_academic_certificate
+  module:
+    - options
+    - user
+id: user.user.field_academic_certificate
+field_name: field_academic_certificate
+entity_type: user
+bundle: user
+label: 'Academic Certificate'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

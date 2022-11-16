@@ -1,0 +1,18 @@
+uuid: bce846b8-16bb-4274-a870-06dff54f0915
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.project
+    - node.type.story
+  module:
+    - node
+id: support_groups
+label: 'Support Groups'
+weight: 7
+is_admin: null
+permissions:
+  - 'create project content'
+  - 'create story content'
+  - 'edit own project content'
+  - 'edit own story content'

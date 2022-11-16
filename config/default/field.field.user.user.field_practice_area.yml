@@ -1,0 +1,20 @@
+uuid: f6a256d5-9545-49f6-9466-5d0d917d88d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_practice_area
+  module:
+    - user
+id: user.user.field_practice_area
+field_name: field_practice_area
+entity_type: user
+bundle: user
+label: 'Practice Area'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

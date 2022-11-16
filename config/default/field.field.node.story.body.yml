@@ -1,0 +1,27 @@
+uuid: 3bbf5f2a-c842-4b39-ac15-9b857e1b5501
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.story
+  module:
+    - text
+id: node.story.body
+field_name: body
+entity_type: node
+bundle: story
+label: 'Project Summery '
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    summary: 'Summary here'
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: true
+field_type: text_with_summary

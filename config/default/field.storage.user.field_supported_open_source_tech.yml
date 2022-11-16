@@ -1,0 +1,20 @@
+uuid: 9be974cd-2ce8-40af-bd59-d30330d36f1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: user.field_supported_open_source_tech
+field_name: field_supported_open_source_tech
+entity_type: user
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

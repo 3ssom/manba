@@ -1,0 +1,25 @@
+uuid: d3701f87-555b-4c12-bd57-4308317e63c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - user
+id: user_path
+label: 'User Paths'
+type: 'canonical_entities:user'
+pattern: '/u/[user:account-name]'
+selection_criteria:
+  adb4b402-8bfe-4b93-8118-eb5f3673f537:
+    id: language
+    negate: false
+    uuid: adb4b402-8bfe-4b93-8118-eb5f3673f537
+    context_mapping:
+      language: 'user:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -5
+relationships:
+  'user:langcode:language':
+    label: Language

@@ -1,0 +1,57 @@
+uuid: f82a20e2-cacb-41ec-a33c-8ac7e1562c40
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.story.body
+    - field.field.node.story.comment
+    - field.field.node.story.field_a_summary_of_the_organizat
+    - field.field.node.story.field_duration_of_implementation
+    - field.field.node.story.field_estimated_financial_saving
+    - field.field.node.story.field_list_of_close_source_techn
+    - field.field.node.story.field_list_of_open_source_techno
+    - field.field.node.story.field_name_of_the_organization
+    - field.field.node.story.field_non_financial_advantages_d
+    - field.field.node.story.field_other_techniques
+    - field.field.node.story.field_project_date
+    - field.field.node.story.field_story_image
+    - field.field.node.story.field_the_number_of_beneficiarie
+    - field.field.node.story.field_the_number_of_members_of_t
+    - node.type.story
+  module:
+    - text
+    - user
+id: node.story.teaser
+targetEntityType: node
+bundle: story
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment: true
+  field_a_summary_of_the_organizat: true
+  field_duration_of_implementation: true
+  field_estimated_financial_saving: true
+  field_list_of_close_source_techn: true
+  field_list_of_open_source_techno: true
+  field_name_of_the_organization: true
+  field_non_financial_advantages_d: true
+  field_other_techniques: true
+  field_project_date: true
+  field_story_image: true
+  field_the_number_of_beneficiarie: true
+  field_the_number_of_members_of_t: true
+  langcode: true

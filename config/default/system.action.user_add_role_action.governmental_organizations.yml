@@ -1,0 +1,14 @@
+uuid: 9e3d90c1-3d33-4e8f-a308-b17338cc6864
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.governmental_organizations
+  module:
+    - user
+id: user_add_role_action.governmental_organizations
+label: 'Add the Governmental Organizations role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: governmental_organizations

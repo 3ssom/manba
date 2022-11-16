@@ -1,0 +1,688 @@
+uuid: 4be20ac9-f837-4c93-8035-bf21e2b1b40b
+langcode: ar
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_academic_certificate
+    - field.field.user.user.field_account_type
+    - field.field.user.user.field_company_name
+    - field.field.user.user.field_company_summary
+    - field.field.user.user.field_company_website
+    - field.field.user.user.field_cr_number
+    - field.field.user.user.field_delegation_letter
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_github
+    - field.field.user.user.field_group_image
+    - field.field.user.user.field_group_name
+    - field.field.user.user.field_interests
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_organization_image
+    - field.field.user.user.field_organization_name
+    - field.field.user.user.field_practice_area
+    - field.field.user.user.field_summary
+    - field.field.user.user.field_supported_open_source_tech
+    - field.field.user.user.field_twitter
+    - field.field.user.user.field_university_enrolment_numbe
+    - field.field.user.user.field_university_level
+    - field.field.user.user.field_website
+    - field.field.user.user.field_years_of_experience
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - conditional_fields
+    - field_group
+    - image
+    - link
+    - user
+third_party_settings:
+  field_group:
+    group_type_collection:
+      children:
+        - field_full_name
+        - field_university_enrolment_numbe
+        - field_university_level
+        - field_interests
+        - field_practice_area
+        - field_years_of_experience
+        - field_academic_certificate
+        - field_website
+        - field_twitter
+        - field_linkedin
+        - field_github
+        - field_summary
+        - field_company_name
+        - field_cr_number
+        - field_group_name
+        - field_group_image
+        - field_organization_name
+        - field_organization_image
+        - field_delegation_letter
+        - field_company_summary
+        - field_supported_open_source_tech
+        - field_company_website
+      label: 'Registration Fields'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: true
+        description: ''
+        required_fields: true
+    group_personal:
+      children:
+        - account
+        - user_picture
+      label: Personal
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: true
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_academic_certificate:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        fb9027d6-358f-4298-8134-18f5995d61e3:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: expert
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_account_type:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_company_name:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        666e6589-4e54-47b3-9efe-26df880595c7:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: company
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_company_summary:
+    type: string_textarea
+    weight: 21
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        dbfcb647-9f59-4884-bafb-218ab8f0768a:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: company
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_company_website:
+    type: link_default
+    weight: 23
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        3e37c0df-98df-450e-b7f3-611629b3101b:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: company
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_cr_number:
+    type: number
+    weight: 15
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        c86c9b45-c4fd-4bd4-8fd7-8b5839464b9c:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: company
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_delegation_letter:
+    type: image_image
+    weight: 20
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      conditional_fields:
+        58e70420-5135-4b5c-9b16-adb74309af3e:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: governmental_organizations
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_full_name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        fd47dbae-13a4-4ad6-a17f-82a9d0edfb2f:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: "student\r\nexpert"
+            value_form:
+              -
+                value: student
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_github:
+    type: link_default
+    weight: 12
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        061f66ac-fe96-4328-9678-338451420710:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: expert
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_group_image:
+    type: image_image
+    weight: 17
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      conditional_fields:
+        58aaf7a9-d452-4982-a66c-86c253dd48f5:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: support_groups
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_group_name:
+    type: string_textfield
+    weight: 16
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        e052f0ce-78da-4a4e-80b4-05f2b00afc1e:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: support_groups
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_interests:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        7fc35bb0-7558-476b-b7b1-8d4a32450f46:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: student
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_linkedin:
+    type: link_default
+    weight: 11
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        1bd43601-1909-4440-bd1a-e03cf3fa6f39:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: expert
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_organization_image:
+    type: image_image
+    weight: 19
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      conditional_fields:
+        f8ce2d19-311a-4d78-9d84-7f15aa97fa19:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: governmental_organizations
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_organization_name:
+    type: string_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        58e7d7cf-7407-49ef-a109-9eeaa4c4cb32:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: governmental_organizations
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_practice_area:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        3c0ce67b-b70c-4db9-b71e-9dd462a83faf:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: expert
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_summary:
+    type: string_textarea
+    weight: 13
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        a146925f-0bcd-415d-84c9-48b0589fc9dd:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: expert
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_supported_open_source_tech:
+    type: entity_reference_autocomplete
+    weight: 22
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        3a3651b2-72ee-43c5-b1df-5f721e53d1e5:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: "company\r\nexpert"
+            value_form:
+              -
+                value: company
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_twitter:
+    type: link_default
+    weight: 10
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        87ef7e17-6862-4918-9a3b-08eecc935e18:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: expert
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_university_enrolment_numbe:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        9c262b29-81d4-4755-9f30-539684030e58:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: student
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_university_level:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        13327460-222b-4bf2-a65c-bc17a5fe2256:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: student
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_website:
+    type: link_default
+    weight: 9
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        a5c34aea-0aeb-45a5-b449-620c0bb06a2a:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: expert
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_years_of_experience:
+    type: number
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        6b1d50b5-52aa-42f4-af25-462d5304027a:
+          entity_type: user
+          bundle: user
+          dependee: field_account_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: expert
+            effect: show
+            effect_options: {  }
+            selector: ''
+  user_picture:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  contact: true
+  langcode: true
+  language: true
+  timezone: true

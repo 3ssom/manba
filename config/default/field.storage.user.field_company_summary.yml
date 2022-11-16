@@ -1,0 +1,19 @@
+uuid: 6b8a531f-152a-434e-9dd9-1aebc8a5f8f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_company_summary
+field_name: field_company_summary
+entity_type: user
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

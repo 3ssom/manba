@@ -1,0 +1,4 @@
+name: Custom module for Manba Core.
+description: "Custom module for Manba Core."
+type: module
+core_version_requirement: ^8 || ^9

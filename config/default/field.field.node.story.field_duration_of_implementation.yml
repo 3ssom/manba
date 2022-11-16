@@ -1,0 +1,23 @@
+uuid: c67de6fe-5637-4342-b030-98e523c32204
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duration_of_implementation
+    - node.type.story
+id: node.story.field_duration_of_implementation
+field_name: field_duration_of_implementation
+entity_type: node
+bundle: story
+label: 'Duration Of Implementation'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: Days
+field_type: integer

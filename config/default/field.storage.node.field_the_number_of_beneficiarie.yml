@@ -1,0 +1,20 @@
+uuid: 22f16365-2851-47ee-ab50-88a67f8399db
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_the_number_of_beneficiarie
+field_name: field_the_number_of_beneficiarie
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,17 @@
+uuid: cb31dea7-be88-40b1-a215-10ccfdcc1fd5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Event
+type: event
+description: 'Here you can add a event to Events page.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

@@ -1,0 +1,155 @@
+uuid: 923c203e-6995-44a7-9dda-08ac3641c471
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.story.body
+    - field.field.node.story.comment
+    - field.field.node.story.field_a_summary_of_the_organizat
+    - field.field.node.story.field_duration_of_implementation
+    - field.field.node.story.field_estimated_financial_saving
+    - field.field.node.story.field_list_of_close_source_techn
+    - field.field.node.story.field_list_of_open_source_techno
+    - field.field.node.story.field_name_of_the_organization
+    - field.field.node.story.field_non_financial_advantages_d
+    - field.field.node.story.field_other_techniques
+    - field.field.node.story.field_project_date
+    - field.field.node.story.field_story_image
+    - field.field.node.story.field_the_number_of_beneficiarie
+    - field.field.node.story.field_the_number_of_members_of_t
+    - node.type.story
+  module:
+    - comment
+    - datetime
+    - image
+    - text
+    - user
+id: node.story.default
+targetEntityType: node
+bundle: story
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  comment:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_a_summary_of_the_organizat:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_duration_of_implementation:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_estimated_financial_saving:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_list_of_close_source_techn:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_list_of_open_source_techno:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_name_of_the_organization:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_non_financial_advantages_d:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_other_techniques:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_project_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_story_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_the_number_of_beneficiarie:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_the_number_of_members_of_t:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

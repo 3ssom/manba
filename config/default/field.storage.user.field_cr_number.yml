@@ -1,0 +1,20 @@
+uuid: 548ad1bf-ee64-4ab0-946d-cb614f8e4d91
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_cr_number
+field_name: field_cr_number
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

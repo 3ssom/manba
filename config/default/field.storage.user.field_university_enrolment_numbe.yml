@@ -1,0 +1,20 @@
+uuid: 8ec4f98e-f0ee-42e4-aae1-2f3fe0de862f
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_university_enrolment_numbe
+field_name: field_university_enrolment_numbe
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

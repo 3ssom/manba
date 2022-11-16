@@ -1,0 +1,30 @@
+uuid: f4cef886-7f4a-43d7-8c9e-a0d1e69920cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_supported_open_source_tech
+    - node.type.project
+  module:
+    - user
+id: user.user.field_supported_open_source_tech
+field_name: field_supported_open_source_tech
+entity_type: user
+bundle: user
+label: 'Supported Open Source Technologies'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      project: project
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

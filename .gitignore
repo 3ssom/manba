@@ -1,34 +1,81 @@
+# gitignore template for Drupal 8 projects
+#
+# earlier versions of Drupal are tracked in `community/PHP/`
+
+# Ignore configuration files that may contain sensitive information
+web/sites/*/*settings*.php
+web/sites/*/*services*.yml
+
+# Ignore paths that may contain user-generated content
+web/sites/*/files
+web/sites/*/public
+web/sites/*/private
+web/sites/*/files-public
+web/sites/*/files-private
+
 # Ignore paths that may contain temporary files
-/sites/*/translations
-/sites/*/tmp
-/sites/*/cache
+web/sites/*/translations
+web/sites/*/tmp
+web/sites/*/cache
 
 # Ignore testing related files
-/sites/simpletest
+web/sites/simpletest
 
 # Ignore drupal core (if not versioning drupal sources)
-/core
-/modules/README.txt
-/profiles/README.txt
-/sites/README.txt
-/sites/example.sites.php
-/sites/example.settings.local.php
-/sites/development.services.yml
-/themes/README.txt
-/vendor
-/.csslintrc
+/web/vendor
+/web/core
+/web/libraries/
+/web/modules/contrib/
+/web/themes/
+web/modules/README.txt
+web/profiles/README.txt
+web/themes/README.txt
+web/sites/README.txt
+web/sites/example.sites.php
+web/sites/example.settings.local.php
+web/sites/development.services.yml
+web/.csslintrc
 /.editorconfig
-/.eslintignore
-/.eslintrc.json
+web/.eslintignore
+web/.eslintrc.json
 /.gitattributes
-/.htaccess
+web/.ht.router.php
+web/.htaccess
+web/example.gitignore
+web/INSTALL.txt
+web/LICENSE.txt
+web/README.md
+web/robots.txt
+web/web.config
+.DS_Store
+web/sites/sites.php
+.csslintrc
+.eslintignore
+.eslintrc.json
+.ht.router.php
+.htaccess
+INSTALL.txt
+README.txt
 /autoload.php
-/composer.json
-/composer.lock
 /example.gitignore
-/index.php
-/LICENSE.txt
-/README.txt
-/robots.txt
-/update.php
-/web.config
+index.php
+robots.txt
+update.php
+web.config
+.idea
+phpunit.xml
+*.sql
+*.sql.gz
+*.bak
+/.phpunit.result.cache
+
+# Ignore vendor dependencies and scripts
+/vendor
+/composer.phar
+/composer
+/robo.phar
+/robo
+/drush.phar
+/drush
+/drupal.phar
+/drupal
