@@ -18,6 +18,7 @@
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.2",
         "drupal/better_exposed_filters": "^6.0",
+        "drupal/bootstrap_barrio": "^5.1",
         "drupal/calendar": "^1.0@alpha",
         "drupal/captcha": "^1.6",
         "drupal/conditional_fields": "^4.0@alpha",
@@ -30,6 +31,9 @@
         "drupal/pathauto": "^1.11",
         "drupal/realistic_dummy_content": "^3.1",
         "drupal/smtp": "^1.2",
+        "drupal/svg_image": "^1.16",
+        "drupal/twig_tweak": "^3.2",
+        "drupal/views_bootstrap": "^4.4",
         "drush/drush": "^11.3"
     },
     "conflict": {
