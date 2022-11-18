@@ -26,7 +26,6 @@ web/sites/simpletest
 /web/core
 /web/libraries/
 /web/modules/contrib/
-/web/themes/
 web/modules/README.txt
 web/profiles/README.txt
 web/themes/README.txt
@@ -68,7 +67,7 @@ phpunit.xml
 *.sql.gz
 *.bak
 /.phpunit.result.cache
-
+scripts/
 # Ignore vendor dependencies and scripts
 /vendor
 /composer.phar
