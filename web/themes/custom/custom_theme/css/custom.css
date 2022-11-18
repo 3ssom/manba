@@ -1,0 +1,6 @@
+.navbar-brand img {
+  max-width: 150px;
+}
+header.header_area:not(.navbar_fixed) .navbar-brand img {
+  filter: brightness(0) invert(1);
+}

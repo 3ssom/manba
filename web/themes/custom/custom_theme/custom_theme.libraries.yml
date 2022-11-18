@@ -1,0 +1,39 @@
+global-styling:
+  js:
+    vendors/wow/wow.min.js: {}
+    vendors/sckroller/jquery.parallax-scroll.js: {}
+    vendors/owl-carousel/owl.carousel.min.js: {}
+    vendors/imagesloaded/imagesloaded.pkgd.min.js: {}
+    vendors/isotope/isotope-min.js: {}
+    vendors/magnify-pop/jquery.magnific-popup.min.js: {}
+    vendors/bootstrap-selector/js/bootstrap-select.min.js: {}
+    vendors/nice-select/jquery.nice-select.min.js: {}
+    js/plugins.js: {}
+    js/main.js: {}
+  css:
+    theme:
+      vendors/themify-icon/themify-icons.css: {}
+      vendors/flaticon/flaticon.css: {}
+      vendors/animation/animate.css: {}
+      vendors/owl-carousel/assets/owl.carousel.min.css: {}
+      vendors/magnify-pop/magnific-popup.css: {}
+      vendors/nice-select/nice-select.css: {}
+      css/style.css: {}
+      css/custom.css: {}
+      css/responsive.css: {}
+
+bootstrap:
+  js:
+    js/propper.js: {}
+    js/bootstrap.min.js: {}
+  css:
+    theme:
+      css/bootstrap.min.css: {}
+      vendors/bootstrap-selector/css/bootstrap-select.min.css: {}
+
+global-rtl-styling:
+  js:
+    js/custom-rtl.js: {}
+  css:
+    theme:
+      css/custom-rtl.css: {}
