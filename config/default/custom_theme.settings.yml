@@ -36,7 +36,7 @@ bootstrap_barrio_region_clean_sidebar_first: 1
 bootstrap_barrio_region_class_sidebar_first: ''
 bootstrap_barrio_region_clean_sidebar_second: 1
 bootstrap_barrio_region_class_sidebar_second: ''
-bootstrap_barrio_region_clean_footer: 0
+bootstrap_barrio_region_clean_footer: 1
 bootstrap_barrio_region_class_footer: row
 bootstrap_barrio_sidebar_position: left
 bootstrap_barrio_content_offset: '0'
@@ -78,3 +78,5 @@ bootstrap_barrio_system_messages: ''
 bootstrap_barrio_table_style: ''
 bootstrap_barrio_table_hover: 0
 bootstrap_barrio_table_head: ''
+bootstrap_barrio_region_clean_bottom_footer: 1
+bootstrap_barrio_region_class_bottom_footer: row

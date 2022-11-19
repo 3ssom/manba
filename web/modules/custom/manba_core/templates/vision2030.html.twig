@@ -1,0 +1,17 @@
+
+
+{% set class = [
+'col-lg-3',
+'col-md-6',
+'dark_widget',
+]
+%}
+<div class="{{ class|join(' ') }}">
+  <h3 class="f-title f_600 t_color f_size_18 mb_40">{{ 'Sponsored by'|t }}</h3>
+  <p></p>
+	<div class="f_widget dark_widget company_widget wow fadeInUp" data-wow-delay="0.2s">
+		<a href="https://www.vision2030.gov.sa" title="{{ 'Saudi Programmers Association Parmg'|t }}" class="f-logo">
+      <img class="img-sm" src="/{{ active_theme_path() }}/img/vision2030.png" alt="logo">
+    </a>
+	</div>
+</div>

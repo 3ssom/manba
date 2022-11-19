@@ -19,3 +19,13 @@
 .menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link{
   font: 600 16px "IBM Plex Sans Arabic", sans-serif;
 }
+.footer_bottom .f_menu {
+  text-align: left !important;
+}
+.footer_bottom .f_menu li + li {
+  margin-right: 16px;
+}
+.footer_bottom .f_menu li + li:before{
+  margin-left: 18px;
+  margin-right: 0px;
+}

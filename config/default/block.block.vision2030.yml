@@ -1,0 +1,20 @@
+uuid: 5afa9ec1-c0bf-44ab-aa79-9f2368a2278d
+langcode: ar
+status: true
+dependencies:
+  module:
+    - manba_core
+  theme:
+    - custom_theme
+id: vision2030
+theme: custom_theme
+region: footer
+weight: -7
+provider: null
+plugin: vision2030_block
+settings:
+  id: vision2030_block
+  label: 'Vision 2030'
+  label_display: '0'
+  provider: manba_core
+visibility: {  }

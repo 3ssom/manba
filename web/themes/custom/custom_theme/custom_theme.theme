@@ -7,6 +7,17 @@
 
 use Drupal\Core\Form\FormStateInterface;
 
+
+/**
+ * Implements hook_preprocess()
+ */
+function custom_theme_preprocess(&$variables, $hook)
+{
+  $lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['lang'] = $lang;
+
+}
+
 /**
  * Implements hook_form_system_theme_settings_alter() for settings form.
  *
