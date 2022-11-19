@@ -1,0 +1,23 @@
+uuid: dc331875-8d7a-4e75-b096-236b2d4ef0c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_drupal
+  module:
+    - link
+    - user
+id: user.user.field_drupal
+field_name: field_drupal
+entity_type: user
+bundle: user
+label: Drupal
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

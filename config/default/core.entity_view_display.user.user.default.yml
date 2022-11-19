@@ -10,6 +10,7 @@ dependencies:
     - field.field.user.user.field_company_website
     - field.field.user.user.field_cr_number
     - field.field.user.user.field_delegation_letter
+    - field.field.user.user.field_drupal
     - field.field.user.user.field_full_name
     - field.field.user.user.field_github
     - field.field.user.user.field_group_image
@@ -29,9 +30,9 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - image
     - link
     - options
+    - svg_image
     - user
 _core:
   default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
@@ -100,6 +101,18 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 26
+    region: content
+  field_drupal:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 30
     region: content
   field_full_name:
     type: string
