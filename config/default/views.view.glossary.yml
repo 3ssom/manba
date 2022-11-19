@@ -85,7 +85,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: Author
+          label: المؤلف
           exclude: false
           alter:
             alter_text: false
@@ -137,7 +137,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: field
-          label: 'Last update'
+          label: 'آخر تحديث'
           exclude: false
           alter:
             alter_text: false
@@ -198,19 +198,19 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- الكل -'
             offset: false
-            offset_label: Offset
+            offset_label: الإزاحة
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: تطبيق
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
       access:
         type: perm
         options:
@@ -378,7 +378,7 @@ display:
       tags: {  }
   attachment_1:
     id: attachment_1
-    display_title: Attachment
+    display_title: المرفق
     display_plugin: attachment
     position: 2
     display_options:
@@ -446,7 +446,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: الصفحة
     display_plugin: page
     position: 1
     display_options:
