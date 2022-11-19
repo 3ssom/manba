@@ -1,0 +1,8 @@
+uuid: 592f933d-f6af-4173-a376-4883629115d6
+langcode: ar
+status: true
+dependencies: {  }
+id: bottom-footer
+label: 'التذييل السفلي'
+description: 'روابط تظهر أسفل التذييل'
+locked: false

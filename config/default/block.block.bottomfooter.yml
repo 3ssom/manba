@@ -1,0 +1,20 @@
+uuid: 5f85fc07-444e-4fd0-a0ee-2421e796be8a
+langcode: ar
+status: true
+dependencies:
+  module:
+    - manba_core
+  theme:
+    - custom_theme
+id: bottomfooter
+theme: custom_theme
+region: bottom_footer
+weight: 0
+provider: null
+plugin: bottom_footer_block
+settings:
+  id: bottom_footer_block
+  label: 'Bottom Footer'
+  label_display: '0'
+  provider: manba_core
+visibility: {  }

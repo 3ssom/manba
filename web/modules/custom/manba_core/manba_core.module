@@ -34,6 +34,10 @@ function manba_core_theme()
         'variables' => array('items' => null,),
         'template' => 'important-links',
       ),
+      'bottom_footer_block' => array(
+        'variables' => array('items' => null,),
+        'template' => 'bottom-footer',
+      ),
     ];
 }
 

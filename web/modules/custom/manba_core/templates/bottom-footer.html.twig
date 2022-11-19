@@ -1,0 +1,8 @@
+<div class="col-lg-6 {{ lang == "ar" ? 'text-right'}} col-md-5 col-sm-12">
+	<p class="mb-0 f_300">{{ 'Copyright'|t }} © {{ 'now'|date('Y') }}
+		<a href="{{ drupal_url('<front>') }}"><b>{{ drupal_config('system.site', 'name') }}</b></a>
+	</p>
+</div>
+<div class="col-lg-6 col-md-4  col-sm-12">
+{{ drupal_menu('bottom-footer') }}
+</div>
