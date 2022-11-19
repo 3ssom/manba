@@ -46,14 +46,14 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 13
+    weight: 9
     region: content
   field_account_type:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 2
     region: content
   field_company_name:
     type: string
@@ -61,14 +61,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 19
+    weight: 16
     region: content
   field_company_summary:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 27
+    weight: 23
     region: content
   field_company_website:
     type: link
@@ -80,7 +80,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 29
+    weight: 25
     region: content
   field_cr_number:
     type: number_integer
@@ -89,7 +89,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 20
+    weight: 17
     region: content
   field_delegation_letter:
     type: image
@@ -97,10 +97,14 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 26
+    weight: 22
     region: content
   field_drupal:
     type: link
@@ -112,7 +116,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 30
+    weight: 14
     region: content
   field_full_name:
     type: string
@@ -120,7 +124,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 7
+    weight: 3
     region: content
   field_github:
     type: link
@@ -132,7 +136,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 17
+    weight: 13
     region: content
   field_group_image:
     type: image
@@ -140,10 +144,14 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 23
+    weight: 19
     region: content
   field_group_name:
     type: string
@@ -151,14 +159,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 22
+    weight: 18
     region: content
   field_interests:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 10
+    weight: 6
     region: content
   field_linkedin:
     type: link
@@ -170,7 +178,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 16
+    weight: 12
     region: content
   field_organization_image:
     type: image
@@ -178,10 +186,14 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 25
+    weight: 21
     region: content
   field_organization_name:
     type: string
@@ -189,7 +201,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 24
+    weight: 20
     region: content
   field_practice_area:
     type: string
@@ -197,14 +209,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 11
+    weight: 7
     region: content
   field_summary:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 18
+    weight: 15
     region: content
   field_supported_open_source_tech:
     type: entity_reference_label
@@ -212,7 +224,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 28
+    weight: 24
     region: content
   field_twitter:
     type: link
@@ -224,7 +236,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 15
+    weight: 11
     region: content
   field_university_enrolment_numbe:
     type: number_integer
@@ -233,7 +245,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 8
+    weight: 4
     region: content
   field_university_level:
     type: string
@@ -241,7 +253,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 9
+    weight: 5
     region: content
   field_website:
     type: link
@@ -253,7 +265,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 14
+    weight: 10
     region: content
   field_years_of_experience:
     type: number_integer
@@ -262,10 +274,12 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 12
+    weight: 8
     region: content
   member_for:
-    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
   user_picture:
     type: image
@@ -273,6 +287,10 @@ content:
     settings:
       image_link: content
       image_style: thumbnail
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
       image_loading:
         attribute: lazy
     third_party_settings: {  }
