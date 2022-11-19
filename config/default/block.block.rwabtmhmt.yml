@@ -14,7 +14,7 @@ provider: null
 plugin: important_links_block
 settings:
   id: important_links_block
-  label: 'روابط مهمة'
+  label: 'Important Links'
   label_display: '0'
   provider: manba_core
 visibility: {  }

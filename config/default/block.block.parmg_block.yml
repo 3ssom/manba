@@ -14,7 +14,7 @@ provider: null
 plugin: parmg_block
 settings:
   id: parmg_block
-  label: برمج
+  label: Parmg
   label_display: '0'
   provider: manba_core
 visibility: {  }
