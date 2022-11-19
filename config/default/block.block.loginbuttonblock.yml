@@ -1,0 +1,20 @@
+uuid: f39bead4-73fb-4ecb-80f9-8f1742117095
+langcode: ar
+status: true
+dependencies:
+  module:
+    - manba_core
+  theme:
+    - custom_theme
+id: loginbuttonblock
+theme: custom_theme
+region: header
+weight: 0
+provider: null
+plugin: login_button_block
+settings:
+  id: login_button_block
+  label: 'Login Button Block'
+  label_display: '0'
+  provider: manba_core
+visibility: {  }

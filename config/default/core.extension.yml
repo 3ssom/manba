@@ -21,7 +21,6 @@ module:
   contact: 0
   contextual: 0
   datetime: 0
-  dblog: 0
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
@@ -56,14 +55,17 @@ module:
   search: 0
   shortcut: 0
   smtp: 0
+  svg_image: 0
   system: 0
   taxonomy: 0
   text: 0
   token: 0
   toolbar: 0
   tour: 0
+  twig_tweak: 0
   update: 0
   user: 0
+  views_bootstrap: 0
   views_templates: 0
   views_ui: 0
   votingapi: 0
@@ -74,4 +76,6 @@ module:
 theme:
   olivero: 0
   claro: 0
+  bootstrap_barrio: 0
+  custom_theme: 0
 profile: standard

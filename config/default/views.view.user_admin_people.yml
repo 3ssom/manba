@@ -7,20 +7,20 @@ dependencies:
 _core:
   default_config_hash: njaZigMvB4ap21Fg_tQcJhWgYJCGNi49Z5rRL_N6RI0
 id: user_admin_people
-label: People
+label: الأشخاص
 module: user
-description: 'Find and manage people interacting with your site.'
+description: 'بحث وإدارة الأشخاص المتفاعلين مع موقعك.'
 tag: default
 base_table: users_field_data
 base_field: uid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: الافتراضي
     display_plugin: default
     position: 0
     display_options:
-      title: People
+      title: الأشخاص
       fields:
         user_bulk_form:
           id: user_bulk_form
@@ -905,14 +905,14 @@ display:
       path: admin/people/list
       menu:
         type: 'default tab'
-        title: List
-        description: 'Find and manage people interacting with your site.'
+        title: لائحة
+        description: 'بحث وإدارة الأشخاص المتفاعلين مع موقعك.'
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: People
+        title: الأشخاص
         description: 'Manage user accounts, roles, and permissions.'
         weight: 0
         menu_name: admin

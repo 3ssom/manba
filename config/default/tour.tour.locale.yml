@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: Kcx1PIw-KgGbTo5_tOkbI6TWJiP_0Sr7t5T9SuMV2hA
 id: locale
-label: Translation
+label: الترجمة
 module: locale
 routes:
   -
@@ -22,14 +22,14 @@ tips:
   locale-language:
     id: locale-language
     plugin: text
-    label: 'Translation language'
+    label: 'لغة الترجمة'
     weight: 2
     selector: '#edit-langcode'
     body: 'Choose the language you want to translate.'
   locale-search:
     id: locale-search
     plugin: text
-    label: Search
+    label: بحث
     weight: 3
     selector: '#edit-string'
     body: 'Enter the specific word or sentence you want to translate, you can also write just a part of a word.'
@@ -50,7 +50,7 @@ tips:
   locale-translate:
     id: locale-translate
     plugin: text
-    label: Translate
+    label: ترجمة
     weight: 6
     selector: .js-form-type-textarea
     body: 'You can write your own translation in the text fields of the right column. Try to figure out in which context the text will be used in order to translate it in the appropriate way.'

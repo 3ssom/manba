@@ -14,7 +14,7 @@ dependencies:
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
-label: 'Authenticated user'
+label: 'مستخدم موثوق'
 weight: 1
 is_admin: false
 permissions:

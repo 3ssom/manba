@@ -2,61 +2,21 @@ display:
   default:
     display_title: الرئيسي
     display_options:
-      exposed_form:
-        options:
-          submit_button: Apply
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
       fields:
         id:
           label: 'المعرف ID'
-          separator: ', '
-        type:
-          separator: ', '
         value:
           label: القيمة
-          separator: ', '
-        vote_source:
-          separator: ', '
-        user_id:
-          separator: ', '
-        timestamp:
-          separator: ', '
   admin_page:
     display_options:
       fields:
         id:
           label: 'المعرف ID'
-          separator: ', '
-        type:
-          separator: ', '
-        entity_id:
-          separator: ', '
-        entity_type:
-          separator: ', '
         value:
           label: القيمة
-          separator: ', '
-        vote_source:
-          separator: ', '
-        user_id:
-          separator: ', '
-        timestamp:
-          separator: ', '
       menu:
         title: الأصوات
   node_page:
     display_options:
       menu:
         title: الأصوات
-      arguments:
-        entity_id:
-          exception:
-            title: All

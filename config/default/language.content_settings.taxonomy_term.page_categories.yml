@@ -1,0 +1,16 @@
+uuid: 46f62f07-f825-48e8-a872-b364329f5210
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.page_categories
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.page_categories
+target_entity_type_id: taxonomy_term
+target_bundle: page_categories
+default_langcode: current_interface
+language_alterable: true

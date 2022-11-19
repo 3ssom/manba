@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: S_NN2ubd_NovTfgzbHVlZMmIJJQS-3h9h3inzbaFUMY
 id: comments_recent
-label: 'Recent comments'
+label: 'أحدث التعليقات'
 module: views
 description: 'Recent comments.'
 tag: default
@@ -18,11 +18,11 @@ base_field: cid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: الافتراضي
     display_plugin: default
     position: 0
     display_options:
-      title: 'Recent comments'
+      title: 'أحدث التعليقات'
       fields:
         subject:
           id: subject
@@ -257,7 +257,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Recent comments'
+      block_description: 'أحدث التعليقات'
       block_category: 'Lists (Views)'
       allow:
         items_per_page: true

@@ -1,0 +1,13 @@
+label: 'أهداف منصة منبع'
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<div class=\"sec_title text-center mb_70 wow fadeInUp\" data-wow-delay=\"0.3s\">\r\n<h2 class=\"f_p f_size_30 l_height50 f_600 t_color\">[view:title]</h2>\r\n\r\n<p class=\"f_300 f_size_16\">الأهداف العامة لمنصة منبع</p>\r\n</div>\r\n"
+            format: full_html
+      title: الأهداف
+  list:
+    display_options:
+      block_description: الأهداف

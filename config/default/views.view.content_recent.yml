@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: YqZN5rc7XDQcFcInc8wkzuaHJmC5YvirhTmDcrarT6M
 id: content_recent
-label: 'Recent content'
+label: 'أحدث المحتويات'
 module: node
 description: 'Recent content.'
 tag: default
@@ -17,11 +17,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: الافتراضي
     display_plugin: default
     position: 0
     display_options:
-      title: 'Recent content'
+      title: 'أحدث المحتويات'
       fields:
         title:
           id: title

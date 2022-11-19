@@ -1,0 +1,8 @@
+uuid: 1c2b61f0-6aa4-4038-bc5a-bfae3826c8ef
+langcode: en
+status: true
+dependencies: {  }
+name: 'Page Categories'
+vid: page_categories
+description: 'This is used in page content type for classification purposes '
+weight: 0

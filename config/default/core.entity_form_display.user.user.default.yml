@@ -673,6 +673,12 @@ content:
             effect: show
             effect_options: {  }
             selector: ''
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     weight: 4

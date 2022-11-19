@@ -2,7 +2,8 @@
 
 *,
 .f_p,
-.btn_get {
+.btn_get ,
+.f_widget.about-widget .f_list li a{
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 

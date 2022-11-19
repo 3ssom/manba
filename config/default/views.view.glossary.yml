@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: sz_FoMz5aClG4jFy4UDlkenXQtgTUXohEDjWVBuHaro
 id: glossary
-label: Glossary
+label: القاموس
 module: node
 description: 'All content, by letter.'
 tag: default
@@ -19,7 +19,7 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: الافتراضي
     display_plugin: default
     position: 0
     display_options:
@@ -34,7 +34,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Title
+          label: العنوان
           exclude: false
           alter:
             alter_text: false
@@ -457,7 +457,7 @@ display:
       path: glossary
       menu:
         type: normal
-        title: Glossary
+        title: القاموس
         weight: 0
         menu_name: main
         parent: ''

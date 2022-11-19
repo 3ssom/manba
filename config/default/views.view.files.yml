@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: DaGeEDJMcbbQtgV96AuPeZ-0irMc_Oa6Zzh2U3Kmul8
 id: files
-label: Files
+label: الملفات
 module: file
 description: 'Find and manage files.'
 tag: default
@@ -17,11 +17,11 @@ base_field: fid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: الافتراضي
     display_plugin: default
     position: 0
     display_options:
-      title: Files
+      title: الملفات
       fields:
         fid:
           id: fid
@@ -756,7 +756,7 @@ display:
       path: admin/content/files
       menu:
         type: tab
-        title: Files
+        title: الملفات
         description: ''
         weight: 0
         menu_name: admin

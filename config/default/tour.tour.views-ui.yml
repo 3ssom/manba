@@ -39,14 +39,14 @@ tips:
   views-ui-format:
     id: views-ui-format
     plugin: text
-    label: 'Output format'
+    label: 'نسق الخروج'
     weight: 4
     selector: .views-ui-display-tab-bucket.format
     body: 'Choose how to output results. E.g., choose <em>Content</em> to output each item completely, using your configured display settings. Or choose <em>Fields</em>, which allows you to output only specific fields for each result. Additional formats can be added by installing modules to <em>extend</em> Drupal''s base functionality.'
   views-ui-fields:
     id: views-ui-fields
     plugin: text
-    label: Fields
+    label: الحقول
     weight: 5
     selector: .views-ui-display-tab-bucket.field
     body: 'If this view uses fields, they are listed here. You can click on a field to configure it.'
@@ -67,7 +67,7 @@ tips:
   views-ui-sorts:
     id: views-ui-sorts
     plugin: text
-    label: 'Sort Criteria'
+    label: 'معايير الفرز'
     weight: 8
     selector: .views-ui-display-tab-bucket.sort
     body: 'Control the order in which the results are output. Click on an active sort rule to configure it.'
@@ -81,7 +81,7 @@ tips:
   views-ui-preview:
     id: views-ui-preview
     plugin: text
-    label: Preview
+    label: معاينة
     weight: 10
     position: right
     selector: '#preview-submit'

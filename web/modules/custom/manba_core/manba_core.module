@@ -7,6 +7,20 @@
 
 use Drupal\Core\Form\FormStateInterface;
 
+
+/**
+ * Implements hook_theme().
+ */
+function manba_core_theme()
+{
+    return [
+      'footer_site_logo_block' => array(
+        'variables' => array('items' => null,),
+        'template' => 'footer-site-logo',
+      ),
+    ];
+}
+
   /**
  * Perform alterations on language switcher links.
  *

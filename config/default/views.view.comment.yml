@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: CgXkKY33fd-yaHz89du2hSw6MJOoIeNUJ-VHE5BiSdQ
 id: comment
-label: Comments
+label: التعليقات
 module: comment
 description: 'Find and manage comments.'
 tag: default
@@ -17,11 +17,11 @@ base_field: cid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: الافتراضي
     display_plugin: default
     position: 0
     display_options:
-      title: Comments
+      title: التعليقات
       fields:
         comment_bulk_form:
           id: comment_bulk_form
@@ -730,7 +730,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: اللغة
             description: ''
             use_operator: false
             operator: langcode_op
@@ -878,7 +878,7 @@ display:
       path: admin/content/comment
       menu:
         type: tab
-        title: Comments
+        title: التعليقات
         description: 'Comments published'
         weight: 0
         menu_name: admin
@@ -1540,7 +1540,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: اللغة
             description: ''
             use_operator: false
             operator: langcode_op

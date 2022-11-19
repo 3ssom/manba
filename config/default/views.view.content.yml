@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: vBKWYGGDoAX-tFd1JErB8tZLSxx3lJ0foouVsgpcbB4
 id: content
-label: Content
+label: المحتوى
 module: node
 description: 'Find and manage content.'
 tag: default
@@ -17,11 +17,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: الافتراضي
     display_plugin: default
     position: 0
     display_options:
-      title: Content
+      title: المحتوى
       fields:
         node_bulk_form:
           id: node_bulk_form
@@ -46,7 +46,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Title
+          label: العنوان
           exclude: false
           alter:
             alter_text: false
@@ -289,7 +289,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: العنوان
             description: ''
             use_operator: false
             operator: title_op
@@ -422,7 +422,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: اللغة
             description: ''
             use_operator: false
             operator: langcode_op
@@ -593,14 +593,14 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Content
+        title: المحتوى
         description: ''
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: Content
+        title: المحتوى
         description: 'Find and manage content'
         weight: -10
         menu_name: admin
