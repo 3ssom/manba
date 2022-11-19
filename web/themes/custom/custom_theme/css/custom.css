@@ -4,3 +4,11 @@
 header.header_area:not(.navbar_fixed) .navbar-brand img {
   filter: brightness(0) invert(1);
 }
+img.img-sm {
+  max-width: 150px;
+}
+
+img.white-img {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+}

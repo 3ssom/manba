@@ -18,6 +18,22 @@ function manba_core_theme()
         'variables' => array('items' => null,),
         'template' => 'footer-site-logo',
       ),
+      'parmg_block' => array(
+        'variables' => array('items' => null,),
+        'template' => 'parmg',
+      ),
+      'vision2030_block' => array(
+        'variables' => array('items' => null,),
+        'template' => 'vision2030',
+      ),
+      'social_links_block' => array(
+        'variables' => array('items' => null,),
+        'template' => 'social-links',
+      ),
+      'important_links_block' => array(
+        'variables' => array('items' => null,),
+        'template' => 'important-links',
+      ),
     ];
 }
 
