@@ -13,6 +13,7 @@ global-styling:
   css:
     theme:
       vendors/themify-icon/themify-icons.css: {}
+      vendors/font-awesome/css/all.css: {}
       vendors/flaticon/flaticon.css: {}
       vendors/animation/animate.css: {}
       vendors/owl-carousel/assets/owl.carousel.min.css: {}

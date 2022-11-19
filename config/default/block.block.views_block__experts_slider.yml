@@ -1,0 +1,29 @@
+uuid: 6aa83849-d97b-4fd8-a913-42382b90aec4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.experts
+  module:
+    - system
+    - views
+  theme:
+    - custom_theme
+id: views_block__experts_slider
+theme: custom_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:experts-slider'
+settings:
+  id: 'views_block:experts-slider'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

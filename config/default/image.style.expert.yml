@@ -1,0 +1,14 @@
+uuid: 78e10567-bd40-459c-8468-430f0587bfb6
+langcode: en
+status: true
+dependencies: {  }
+name: expert
+label: expert
+effects:
+  d61d5efb-ecda-4768-a590-3353e772de51:
+    uuid: d61d5efb-ecda-4768-a590-3353e772de51
+    id: image_resize
+    weight: 1
+    data:
+      width: 270
+      height: 400
