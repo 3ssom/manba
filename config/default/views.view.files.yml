@@ -66,7 +66,7 @@ display:
           entity_type: file
           entity_field: filename
           plugin_id: field
-          label: Name
+          label: الاسم
           exclude: false
           alter:
             alter_text: false
@@ -129,7 +129,7 @@ display:
           entity_type: file
           entity_field: filemime
           plugin_id: field
-          label: 'MIME type'
+          label: 'نوع MIME'
           exclude: false
           alter:
             alter_text: false
@@ -181,7 +181,7 @@ display:
           entity_type: file
           entity_field: filesize
           plugin_id: field
-          label: Size
+          label: الحجم
           exclude: false
           alter:
             alter_text: false
@@ -233,7 +233,7 @@ display:
           entity_type: file
           entity_field: status
           plugin_id: field
-          label: Status
+          label: الحالة
           exclude: false
           alter:
             alter_text: false
@@ -399,7 +399,7 @@ display:
           group_type: sum
           admin_label: ''
           plugin_id: numeric
-          label: 'Used in'
+          label: 'مستخدمة في'
           exclude: false
           alter:
             alter_text: false
@@ -456,26 +456,26 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
+            next: 'التالي ›'
+            previous: '‹ السابق'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- الكل -'
             offset: false
-            offset_label: Offset
+            offset_label: الإزاحة
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: انتقاء
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
       access:
         type: perm
         options:
@@ -510,7 +510,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: Filename
+            label: 'اسم الملف'
             description: ''
             use_operator: false
             operator: filename_op
@@ -552,7 +552,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: 'MIME type'
+            label: 'نوع MIME'
             description: ''
             use_operator: false
             operator: filemime_op
@@ -594,7 +594,7 @@ display:
           exposed: true
           expose:
             operator_id: status_op
-            label: Status
+            label: الحالة
             description: ''
             use_operator: false
             operator: status_op
@@ -786,7 +786,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_label
-          label: Entity
+          label: الكيان
           exclude: false
           alter:
             alter_text: false
@@ -836,7 +836,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: 'Entity type'
+          label: 'نوع الكيان'
           exclude: false
           alter:
             alter_text: false
@@ -934,7 +934,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: numeric
-          label: 'Use count'
+          label: 'استخدام العد'
           exclude: false
           alter:
             alter_text: false
@@ -991,16 +991,16 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
+            next: 'التالي ›'
+            previous: '‹ السابق'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- الكل -'
             offset: false
-            offset_label: Offset
+            offset_label: الإزاحة
       empty: {  }
       arguments:
         fid:
@@ -1017,7 +1017,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: الكل
           title_enable: true
           title: 'File usage information for {{ arguments.fid }}'
           default_argument_type: fixed

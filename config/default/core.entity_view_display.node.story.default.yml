@@ -22,7 +22,7 @@ dependencies:
   module:
     - comment
     - datetime
-    - image
+    - svg_image
     - text
     - user
 id: node.story.default
@@ -123,6 +123,10 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
       image_loading:
         attribute: lazy
     third_party_settings: {  }
