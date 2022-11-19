@@ -26,6 +26,7 @@ web/sites/simpletest
 /web/core
 /web/libraries/
 /web/modules/contrib/
+web/themes/contrib/
 web/modules/README.txt
 web/profiles/README.txt
 web/themes/README.txt
