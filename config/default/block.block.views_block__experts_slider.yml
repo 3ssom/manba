@@ -1,22 +1,22 @@
-uuid: 69763670-dae7-4797-8615-9dd4174fddd4
+uuid: 6aa83849-d97b-4fd8-a913-42382b90aec4
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.goals
+    - views.view.experts
   module:
     - system
     - views
   theme:
     - custom_theme
-id: views_block__goals_list
+id: views_block__experts_slider
 theme: custom_theme
 region: content
-weight: -11
+weight: -9
 provider: null
-plugin: 'views_block:goals-list'
+plugin: 'views_block:experts-slider'
 settings:
-  id: 'views_block:goals-list'
+  id: 'views_block:experts-slider'
   label: ''
   label_display: '0'
   provider: views
