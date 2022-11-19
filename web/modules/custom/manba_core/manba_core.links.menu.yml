@@ -1,0 +1,9 @@
+# Conditional field menu items definition
+config.manba_core.site_settings_form:
+  title: 'Site Settings'
+  route_name: manba_core.site_settings_form
+  description: 'Site Settings Page'
+  parent: system.admin_structure
+  weight: 100
+
+

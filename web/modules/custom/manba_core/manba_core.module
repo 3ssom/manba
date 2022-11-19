@@ -13,7 +13,9 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function manba_core_theme()
 {
-    return [
+  $config = \Drupal::config('manba_core.sites.settings');
+
+  return [
       'footer_site_logo_block' => array(
         'variables' => array('items' => null,),
         'template' => 'footer-site-logo',
@@ -26,10 +28,16 @@ function manba_core_theme()
         'variables' => array('items' => null,),
         'template' => 'vision2030',
       ),
-      'social_links_block' => array(
-        'variables' => array('items' => null,),
+      'social_links_block' => [
+        'variables' => [
+          'items' => null,
+          'twitter' => $config->get('twitter'),
+          'instagram' => $config->get('instagram'),
+          'youtube' => $config->get('youtube'),
+          'linkedin' => $config->get('linkedin'),
+        ],
         'template' => 'social-links',
-      ),
+      ],
       'important_links_block' => array(
         'variables' => array('items' => null,),
         'template' => 'important-links',

@@ -2,10 +2,21 @@
   <h3 class="f-title f_600 t_color f_size_18 mb_40">{{ 'Stay in touch'|t }}</h3>
 	<div class="f_widget dark_widget company_widget wow fadeInUp" data-wow-delay="0.2s">
 		<div class="f_social_icon_two">
-			<a href="#" class="ti-facebook"></a>
-			<a href="#" class="ti-twitter-alt"></a>
-			<a href="#" class="ti-vimeo-alt"></a>
-			<a href="#" class="ti-pinterest"></a>
+			{% if facebook %}
+			<a href="{{ facebook }}" class="ti-facebook"></a>
+			{% endif %}
+			{% if twitter %}
+			<a href="{{ twitter }}" class="ti-twitter-alt"></a>
+			{% endif %}
+			{% if instagram %}
+			<a href="{{ instagram }}" class="ti-instagram"></a>
+			{% endif %}
+			{% if youtube %}
+			<a href="{{ youtube }}" class="ti-youtube"></a>
+			{% endif %}
+			{% if linkedin %}
+			<a href="{{ linkedin }}" class="ti-linkedin"></a>
+			{% endif %}
 		</div>
 	</div>
 </div>

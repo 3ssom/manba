@@ -5,3 +5,11 @@ manba_core.front:
     _controller: '\Drupal\manba_core\Controller\FrontController::build'
   requirements:
     _permission: 'access content'
+
+manba_core.site_settings_form:
+  path: '/admin/structure/site-settings'
+  defaults:
+    _form: '\Drupal\manba_core\Form\SiteSettingsForm'
+    _title: 'Settings'
+  requirements:
+    _permission: 'access site settings form'
