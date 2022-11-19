@@ -1,0 +1,7 @@
+manba_core.front:
+  path: '/front'
+  defaults:
+    _title: 'Home Page'
+    _controller: '\Drupal\manba_core\Controller\FrontController::build'
+  requirements:
+    _permission: 'access content'
