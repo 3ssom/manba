@@ -274,26 +274,10 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: full
+        type: some
         options:
           offset: 0
           items_per_page: 6
-          total_pages: null
-          id: 0
-          tags:
-            next: ››
-            previous: ‹‹
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -428,7 +412,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -447,7 +430,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -645,8 +627,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: summary
-          type: text_default
-          settings: {  }
+          type: text_trimmed
+          settings:
+            trim_length: 150
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -732,7 +715,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"app_testimonial_item text-center\">\r\n  <div class=\"author-img\">\r\n    {{ field_story_image }}\r\n  </div>\r\n  <div class=\"author_info\">\r\n    <h6 class=\"f_p f_500 f_size_18 t_color3 mb-0\">{{ title }}</h6>\r\n    <p>{{ field_name_of_the_organization }}</p>\r\n  </div>\r\n  <p class=\"f_300\">{{ body }}</p>\r\n  </div>\r\n</div>"
+            text: "<div class=\"app_testimonial_item text-center\">  \r\n<div class=\"author-img\">\r\n    {{ field_story_image }}\r\n  </div>\r\n  <div class=\"author_info\">\r\n    <h6 class=\"f_p f_500 f_size_18 t_color3 mb-0\">{{ title }}</h6>\r\n    <p>{{ field_name_of_the_organization }}</p>\r\n  </div>\r\n  <p class=\"f_300\">{{ body }}</p>\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -786,13 +769,12 @@ display:
         style: false
         row: false
         fields: false
+      rendering_language: '***LANGUAGE_language_content***'
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
