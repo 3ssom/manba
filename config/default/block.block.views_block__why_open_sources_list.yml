@@ -1,0 +1,29 @@
+uuid: ab99f0b5-d8e4-4959-b71c-0cf2495f95a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.why_open_sources
+  module:
+    - system
+    - views
+  theme:
+    - custom_theme
+id: views_block__why_open_sources_list
+theme: custom_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:why_open_sources-list'
+settings:
+  id: 'views_block:why_open_sources-list'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
