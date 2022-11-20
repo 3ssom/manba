@@ -8,17 +8,27 @@
   </header>
 {% endif %}
 
+{% if page.breadcrumb %}
 <section class="breadcrumb_area">
   <div class="container">
     <div class="breadcrumb_content text-center">
       {{ page.breadcrumb }}
     </div>
   </div>
-
 </section>
+{% endif %}
 
 <section class="job_listing_area bg_color sec_pad">
   <div class="container">
+
+     {% if page.highlighted %}
+      <div class="highlighted">
+        <aside class="section clearfix" role="complementary">
+          {{ page.highlighted }}
+        </aside>
+      </div>
+    {% endif %}
+
     {{ page.content }}
   </div>
 </section>
