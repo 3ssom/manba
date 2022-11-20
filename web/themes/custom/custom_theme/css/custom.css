@@ -1,9 +1,13 @@
+@import "variables.css";
+
 .navbar-brand img {
   max-width: 150px;
 }
+
 header.header_area:not(.navbar_fixed) .navbar-brand img {
   filter: brightness(0) invert(1);
 }
+
 img.img-sm {
   max-width: 150px;
 }
@@ -12,14 +16,22 @@ img.white-img {
   filter: brightness(0) invert(1);
   -webkit-filter: brightness(0) invert(1);
 }
-.footer_bottom{
+
+.footer_bottom {
   border-top: 1px solid #3c486d;
 }
-.breadcrumb_area{
+
+.breadcrumb_area,
+.error_area {
   background-image: -webkit-linear-gradient(180deg, #2875bc 0%, #3e92d9 100%);
 }
-.breadcrumb{
+
+.breadcrumb {
   background-color: transparent;
   margin: auto;
   display: inline-block;
+}
+
+.about_btn {
+  color: var(--main-color)
 }
