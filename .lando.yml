@@ -7,6 +7,9 @@ config:
   via: nginx
   xdebug: false
 
+proxy:
+  mymail:
+    - mailhog.manba.lndo.site
 services:
   mymail:
     type: mailhog
