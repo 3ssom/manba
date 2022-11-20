@@ -1,22 +1,22 @@
-uuid: 6aa83849-d97b-4fd8-a913-42382b90aec4
+uuid: fbfae5dd-cf0b-470f-8604-0f08c5ba6705
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.experts
+    - views.view.projects
   module:
     - system
     - views
   theme:
     - custom_theme
-id: views_block__experts_slider
+id: views_block__projects_slider
 theme: custom_theme
 region: content
-weight: -8
+weight: -10
 provider: null
-plugin: 'views_block:experts-slider'
+plugin: 'views_block:projects-slider'
 settings:
-  id: 'views_block:experts-slider'
+  id: 'views_block:projects-slider'
   label: ''
   label_display: '0'
   provider: views
