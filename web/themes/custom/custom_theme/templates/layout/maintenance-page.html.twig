@@ -1,0 +1,21 @@
+
+<section class="error_area">
+  <img class="error_shap" src="/{{ active_theme_path() }}/img/breadcrumb/banner_bg.png" alt="" />
+  <div class="container flex">
+    <div class="error_contain text-center">
+        <img src="{{ active_theme_path() }}/logo.png" alt="{{ 'Home'|t }}" width="200" class="white-img img-fluid d-inline-block align-top" />
+      <div class="b_text mb-5 mt-5">
+        <h1 class="f_p w_color f_700">
+        <i class="fas fa-cogs"></i>
+        </h1>
+      </div>
+      <h2 class="f_p f_400 w_color f_size_40 mt-4">
+        {{ 'Site under maintenance'|t }}
+      </h2>
+      <p class="w_color f_300">
+      {{ page.content }}
+      </p>
+
+    </div>
+  </div>
+</section>
