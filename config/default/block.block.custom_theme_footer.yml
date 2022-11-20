@@ -11,7 +11,7 @@ dependencies:
 id: custom_theme_footer
 theme: custom_theme
 region: top_header
-weight: 0
+weight: -14
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
