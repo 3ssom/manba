@@ -1,0 +1,52 @@
+{% if page.header %}
+  <header class="header_area">
+    <nav class="navbar navbar-expand-lg menu_one menu_eight">
+      <div class="container">
+        {{ page.header }}
+      </div>
+    </nav>
+  </header>
+{% endif %}
+
+<section class="error_area">
+  <img class="error_shap" src="/{{ active_theme_path() }}/img/breadcrumb/banner_bg.png" alt="" />
+  <div class="container flex">
+    <div class="error_contain text-center">
+      <div class="b_text">
+        <h1 class="f_p w_color f_700">
+          403
+        </h1>
+      </div>
+      <h2 class="f_p f_400 w_color f_size_40">
+        {{ 'Access denied'|t }}
+      </h2>
+      <p class="w_color f_300">
+      {{ 'You are not authorized to access this page.'|t }}
+      </p>
+      <a href="{{ drupal_url('<front>') }}" class="about_btn btn_hover mt_40">{{ 'Go Back to home Page'|t }}</a>
+    </div>
+  </div>
+</section>
+
+{% if page.footer or page.bottom_footer %}
+  <footer class="footer_area footer_dark_one footer_dark_ten pt_120">
+    {% if page.footer %}
+      <div class="footer_top">
+        <div class="container">
+          <div class="row">
+            {{ page.footer }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    {% if page.bottom_footer %}
+      <div class="footer_bottom dark_f_bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            {{ page.bottom_footer }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </footer>
+{% endif %}
