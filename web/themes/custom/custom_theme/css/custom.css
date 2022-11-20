@@ -15,3 +15,11 @@ img.white-img {
 .footer_bottom{
   border-top: 1px solid #3c486d;
 }
+.breadcrumb_area{
+  background-image: -webkit-linear-gradient(180deg, #2875bc 0%, #3e92d9 100%);
+}
+.breadcrumb{
+  background-color: transparent;
+  margin: auto;
+  display: inline-block;
+}
