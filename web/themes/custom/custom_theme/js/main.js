@@ -206,11 +206,9 @@
         loop: true,
         margin: 10,
         items: 3,
-        autoplay: true,
         autoplaySpeed: true,
         responsiveClass: true,
         nav: true,
-        dot: true,
         navText: [
           '<i class="ti-arrow-left"></i>',
           '<i class="ti-arrow-right"></i>',
