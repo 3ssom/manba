@@ -29,3 +29,8 @@
   margin-left: 18px;
   margin-right: 0px;
 }
+.error_contain h2 {
+  letter-spacing: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
