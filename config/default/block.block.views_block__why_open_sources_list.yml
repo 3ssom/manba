@@ -12,7 +12,7 @@ dependencies:
 id: views_block__why_open_sources_list
 theme: custom_theme
 region: content
-weight: 0
+weight: -11
 provider: null
 plugin: 'views_block:why_open_sources-list'
 settings:
