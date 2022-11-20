@@ -38,30 +38,24 @@
   'view-display-id-' ~ display_id,
   dom_id ? 'js-view-dom-id-' ~ dom_id
 ] %}
-<section class="app_service_area">
-	<div class="container nav_container">
-		{% if header %}
-			{{ header }}
-		{% endif %}
-
-		{% if rows %}
-        <div class="app_service_info owl-carousel">
-				{{ rows }}
-                </div>
-		{% elseif empty %}
-			<div class="view-empty">
-				{{ empty }}
-			</div>
-		{% endif %}
-
-		{% if more %}
-			{{ more }}
-		{% endif %}
-		{% if footer %}
-			<div class="view-footer">
-				{{ footer }}
-			</div>
-		{% endif %}
-		<div class="hr mt_100 mb-0"></div>
-	</div>
-</section>
+{% if rows %}
+  <section class="app_service_area">
+    <div class="container nav_container">
+      {% if header %}
+        {{ header }}
+      {% endif %}
+      <div class="app_service_info owl-carousel">
+        {{ rows }}
+      </div>
+      {% if more %}
+        {{ more }}
+      {% endif %}
+      {% if footer %}
+        <div class="view-footer">
+          {{ footer }}
+        </div>
+      {% endif %}
+      <div class="hr mt_100 mb-0"></div>
+    </div>
+  </section>
+{% endif %}

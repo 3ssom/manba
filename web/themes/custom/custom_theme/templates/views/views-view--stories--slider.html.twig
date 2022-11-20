@@ -38,32 +38,26 @@
   'view-display-id-' ~ display_id,
   dom_id ? 'js-view-dom-id-' ~ dom_id
 ] %}
-<section class="app_testimonial_area">
-	<div class="text_shadow" data-line="STORY"></div>
-	<div class="container nav_container">
-		<div class="shap one"></div>
-		<div class="shap two"></div>
-		<div class="app_testimonial_slider owl-carousel">
-			{% if header %}
-				{{ header }}
-			{% endif %}
-
-			{% if rows %}
-				{{ rows }}
-			{% elseif empty %}
-				<div class="view-empty">
-					{{ empty }}
-				</div>
-			{% endif %}
-
-			{% if more %}
-				{{ more }}
-			{% endif %}
-			{% if footer %}
-				<div class="view-footer">
-					{{ footer }}
-				</div>
-			{% endif %}
-		</div>
-	</div>
-</section>
+{% if rows %}
+  <section class="app_testimonial_area">
+    <div class="text_shadow" data-line="STORY"></div>
+    <div class="container nav_container">
+      <div class="shap one"></div>
+      <div class="shap two"></div>
+      <div class="app_testimonial_slider owl-carousel">
+        {% if header %}
+          {{ header }}
+        {% endif %}
+        {{ rows }}
+        {% if more %}
+          {{ more }}
+        {% endif %}
+        {% if footer %}
+          <div class="view-footer">
+            {{ footer }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+{% endif %}

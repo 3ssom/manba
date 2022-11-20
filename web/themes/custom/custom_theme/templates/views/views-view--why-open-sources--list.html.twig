@@ -38,37 +38,30 @@
   'view-display-id-' ~ display_id,
   dom_id ? 'js-view-dom-id-' ~ dom_id
 ] %}
-<section class="prototype_service_area_three bg_color">
-	<div class="container">
-		<div class="prototype_service_info">
-			<div class="symbols-pulse active">
-				<div class="pulse-1"></div>
-				<div class="pulse-2"></div>
-				<div class="pulse-3"></div>
-				<div class="pulse-4"></div>
-				<div class="pulse-x"></div>
-			</div>
-			{% if header %}
-				{{ header }}
-			{% endif %}
-
-			{% if rows %}
-				{{ rows }}
-			{% elseif empty %}
-				<div class="view-empty">
-					{{ empty }}
-				</div>
-			{% endif %}
-
-			{% if more %}
-				{{ more }}
-			{% endif %}
-			{% if footer %}
-				<div class="view-footer">
-					{{ footer }}
-				</div>
-			{% endif %}
-			<div class="hr mt_100 mb-0"></div>
-		</div>
-	</div>
-</section>
+{% if rows %}
+  <section class="prototype_service_area_three bg_color">
+    <div class="container">
+      <div class="prototype_service_info">
+        <div class="symbols-pulse active">
+          <div class="pulse-1"></div>
+          <div class="pulse-2"></div>
+          <div class="pulse-3"></div>
+          <div class="pulse-4"></div>
+          <div class="pulse-x"></div>
+        </div>
+        {% if header %}
+          {{ header }}
+        {% endif %}
+        {{ rows }}
+        {% if more %}
+          {{ more }}
+        {% endif %}
+        {% if footer %}
+          <div class="view-footer">
+            {{ footer }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+{% endif %}
