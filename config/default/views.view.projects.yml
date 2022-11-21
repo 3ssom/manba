@@ -291,7 +291,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "\t\t{{ field_project_logo }}\r\n\t\t<h5 class=\"f_p f_size_18 f_600 t_color3 mt_40 mb-30\">{{ title }}</h5>\r\n\t\t<p class=\"f_300 f_size_15 mb-30\">{{ body }}</p>\r\n\t\t<a href=\"{{ view_node }}\" class=\"learn_btn_two\">Learn More\r\n\t\t\t<i class=\"ti-arrow-right\"></i>\r\n\t\t</a>\r\n"
+            text: "{{ field_project_logo }}\r\n<h5 class=\"f_p f_size_18 f_600 t_color3 mt_40 mb-30\">{{ title }}</h5>\r\n<p class=\"f_300 f_size_15 mb-30\">{{ body }}</p>\r\n<a href=\"{{ view_node }}\" class=\"learn_btn_two\">Learn More\r\n  <i class=\"ti-arrow-right\"></i>\r\n</a>\r\n"
             make_link: false
             path: ''
             absolute: false
