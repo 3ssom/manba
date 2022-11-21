@@ -1,18 +1,17 @@
 <div class="d-flex align-items-center">
   {{ drupal_block('language_block:language_interface', wrapper=false) }}
-
-  {% if items %}
-  {{ items }}
-  {% else %}
+  {% if logged_in %}
   <ul class="navbar-nav menu w_menu user-account-menu pl_100">
     <li class="nav-item dropdown submenu">
       <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-      aria-expanded="false">
-      <i class="far fa-user-circle"></i>
-      <i class="fas fa-angle-down fa-menu-icon"></i>
-    </a>
-    {{ drupal_menu('account') }}
-  </li>
-</ul>
-{% endif %}
+        aria-expanded="false">
+        <i class="far fa-user-circle"></i>
+        <i class="fas fa-angle-down fa-menu-icon"></i>
+      </a>
+      {{ drupal_menu('account') }}
+    </li>
+  </ul>
+  {% else %}
+    <a class="btn_get btn_hover saas_btn hidden-sm hidden-xs" href="{{ drupal_url('user/login') }}">{{ 'Log In'|t }}</a>
+  {% endif %}
 </div>

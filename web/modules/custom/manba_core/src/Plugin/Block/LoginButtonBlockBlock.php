@@ -23,20 +23,8 @@ class LoginButtonBlockBlock extends BlockBase
    */
   public function build()
   {
-
-    $build = [];
-    $currentUser = \Drupal::currentUser();
-    if (\Drupal::currentUser()->isAnonymous()) {
-      $url = Url::fromRoute('user.login');
-      $link = new Link(t('Log In'), $url);
-      $renderable = $link->toRenderable();
-      $build['link'] = $renderable;
-      $build['link']['#attributes'] = ['class' => ['btn_get btn_hover saas_btn hidden-sm hidden-xs']];
-    }
-
     return array(
       '#theme' => 'login_button_block',
-      '#items' => $build,
     );
   }
 }
