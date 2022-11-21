@@ -251,6 +251,10 @@ display:
           error_message: true
       style:
         type: default
+        options:
+          row_class: 'blog_list_item mb_50'
+          default_row_class: true
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -553,8 +557,8 @@ display:
           grouping: {  }
           row_class: 'row mb_30'
           default_row_class: true
-          col_xs: col-1
-          col_sm: col-sm-2
+          col_xs: col-12
+          col_sm: col-sm-6
           col_md: col-md-4
           col_lg: col-lg-4
           col_xl: col-xl-4
@@ -589,6 +593,43 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          view_mode: teaser
+      defaults:
+        pager: false
+        style: false
+        row: false
+        header: false
+      header: {  }
       display_extenders: {  }
       path: golas
     cache_metadata:

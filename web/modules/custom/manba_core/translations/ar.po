@@ -46,3 +46,9 @@ msgstr "لديك حساب من قبل ؟"
 
 msgid "Login"
 msgstr "تسجيل دخول"
+
+msgid "Read more"
+msgstr "إقرأ المزيد"
+
+msgid "Read more<span class="visually-hidden"> about @title</span>"
+msgstr "إقرأ المزيد<span class="visually-hidden"> عن @title</span>"
