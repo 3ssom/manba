@@ -43,3 +43,13 @@ function custom_theme_form_system_theme_settings_alter(&$form, FormStateInterfac
     'bg-transparent' => t('Transparent'),
   ];
 }
+
+function custom_theme_theme($existing, $type, $theme, $path)
+{
+  return [
+    'user_login_form' => array(
+      'render element' => 'form',
+      'template' => 'form/user-login-form',
+    ),
+  ];
+}

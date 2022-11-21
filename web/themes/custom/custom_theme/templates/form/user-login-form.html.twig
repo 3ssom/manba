@@ -1,0 +1,35 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-7">
+			<div class="login_info">
+				<h2 class="f_p f_700 f_size_40 t_color3 mb_20">{{'Login'|t}}</h2>
+				<div class="form-group text_box">
+					<label class="f_p text_c f_400">{{'User Name'|t}}</label>
+					{{ form.name|without('#title','#description') }}
+				</div>
+				<div class="form-group text_box">
+					<label class="f_p text_c f_400">{{'Password'|t}}</label>
+					{{ form.pass|without('#title','#description') }}
+				</div>
+				<div class="extra">
+					<div class="forgotten-password">
+						<a href="{{ drupal_url('/user/password') }}">{{'Forgot Password?'|t}}</a>
+						<p>{{'New user?'|t}}
+							<a class="login-link" href="{{ drupal_url('user/register') }}">{{'Signup'|t}}</a>
+						</p>
+					</div>
+				</div>
+				{{ form|without('actions','name','pass') }}
+				{{ form.actions }}
+			</div>
+		</div>
+		<div class="col-lg-4 d-flex align-items-center">
+			<div class="login_img">
+				<h1>
+                {{'Welcome back'|t}}
+                </h1>
+			</div>
+		</div>
+
+	</div>
+</div>
