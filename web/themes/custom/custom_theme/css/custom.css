@@ -35,3 +35,19 @@ img.white-img {
 .about_btn {
   color: var(--main-color)
 }
+
+.user-account-menu .fa-menu-icon {
+  font-size: 11px;
+  transition: all ease 0.4s;
+}
+
+.user-account-menu a.nav-link.dropdown-toggle:hover .fa-menu-icon {
+  transform: rotate(180deg);
+}
+
+nav.language-switcher-language-url a.language-link {
+  color: white;
+}
+.header_area.navbar_fixed nav.language-switcher-language-url a.language-link {
+  color: #051441;
+}

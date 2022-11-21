@@ -34,7 +34,9 @@ class LoginButtonBlockBlock extends BlockBase
       $build['link']['#attributes'] = ['class' => ['btn_get btn_hover saas_btn hidden-sm hidden-xs']];
     }
 
-
-    return $build;
+    return array(
+      '#theme' => 'login_button_block',
+      '#items' => $build,
+    );
   }
 }
