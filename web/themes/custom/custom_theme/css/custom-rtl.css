@@ -34,3 +34,10 @@
   margin-bottom: 25px;
   font-weight: 700;
 }
+.login_info {
+  text-align: right;
+}
+.offset-md-3{
+  margin-left: 0;
+  margin-right: 25%;
+}
