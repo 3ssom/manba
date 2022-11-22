@@ -1,19 +1,17 @@
-<div class="container">
-	<div class="row">
-		<div class="col-md-6 offset-md-3 mt-5">
-			<div class="login_info">
-				<div class="form-group text_box">
-					{{ form|without('actions','#descripation') }}
-				</div>
-				<div class="extra">
-					<div class="forgotten-password">
-						<p>{{'already have an account?'|t}}
-							<a class="login-link" href="{{ drupal_url('user/login') }}">{{'Login'|t}}</a>
-						</p>
-					</div>
-				</div>
-				{{ form.actions }}
+<div class="row">
+	<div class="col-md-6 offset-md-3 mt-5">
+		<div class="login_info">
+			<div class="form-group text_box">
+				{{ form|without('actions','#descripation') }}
 			</div>
+			<div class="extra">
+				<div class="forgotten-password">
+					<p>{{'already have an account?'|t}}
+						<a class="login-link" href="{{ drupal_url('user/login') }}">{{'Login'|t}}</a>
+					</p>
+				</div>
+			</div>
+			{{ form.actions }}
 		</div>
 	</div>
 </div>
