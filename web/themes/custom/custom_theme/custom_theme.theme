@@ -58,5 +58,9 @@ function custom_theme_theme($existing, $type, $theme, $path)
       'render element' => 'form',
       'template' => 'form/user-pass-form',
     ),
+    'user_form' => array(
+      'render element' => 'form',
+      'template' => 'form/user-form',
+    ),
   ];
 }
