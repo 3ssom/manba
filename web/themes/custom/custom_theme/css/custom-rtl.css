@@ -3,7 +3,9 @@
 *,
 .f_p,
 .btn_get ,
-.f_widget.about-widget .f_list li a{
+.f_widget.about-widget .f_list li a,
+.views-exposed-form .form-control,
+.faq_content .tab-pane .card .card-header .btn{
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
@@ -12,12 +14,19 @@
 .menu>.nav-item:nth-child(1) {
   margin-left: 45px;
 }
-.menu>.nav-item.submenu .dropdown-menu {
+.menu>.nav-item.submenu .dropdown-menu,
+.views-exposed-form,
+.faq_content .tab-pane .card .card-header .btn {
   text-align: right;
 }
 .menu > .nav-item > .nav-link ,
 .menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link{
   font: 600 16px "IBM Plex Sans Arabic", sans-serif;
+}
+.faq_content .tab-pane .card .card-body{
+  font: 300 15px/26px "IBM Plex Sans Arabic", sans-serif;
+  text-align:right;
+
 }
 .footer_bottom .f_menu {
   text-align: left !important;
@@ -43,4 +52,13 @@
 }
 .node--view-mode-teaser{
   text-align: right;
+}
+
+.faq_content .tab-pane .card .card-header .btn i{
+  right: auto;
+  left: 0;
+}
+
+.faq_content .tab-pane .card .card-header .btn{
+  padding: 20px 0px 20px 30px;
 }

@@ -1,0 +1,10 @@
+label: 'الاسئلة الشائعة'
+display:
+  default:
+    display_options:
+      title: 'الاسئلة الشائعة'
+      filters:
+        combine:
+          expose:
+            label: 'ابحث بالاسئلة الشائعة'
+            placeholder: 'ابحث بالسؤال او الجواب'
