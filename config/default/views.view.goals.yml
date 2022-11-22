@@ -10,7 +10,7 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.page_categories
   content:
-    - 'taxonomy_term:page_categories:2a74f6fa-c9a1-4205-9a8c-f12b39e37b9a'
+    - 'taxonomy_term:page_categories:1f3e08d4-72cd-4e6e-afa2-03dd9e5e746c'
   module:
     - node
     - svg_image
@@ -213,7 +213,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            5: 5
+            1: 1
           group: 1
           exposed: false
           expose:
@@ -615,11 +615,16 @@ display:
             offset_label: Offset
           quantity: 9
       style:
-        type: default
+        type: views_bootstrap_grid
         options:
           row_class: ''
           default_row_class: false
           uses_fields: false
+          col_xs: col-12
+          col_sm: col-sm-12
+          col_md: col-md-12
+          col_lg: col-lg-12
+          col_xl: col-xl-12
       row:
         type: 'entity:node'
         options:
@@ -631,7 +636,7 @@ display:
         header: false
       header: {  }
       display_extenders: {  }
-      path: golas
+      path: goals
     cache_metadata:
       max-age: -1
       contexts:
