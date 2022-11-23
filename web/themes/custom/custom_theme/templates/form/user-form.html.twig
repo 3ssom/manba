@@ -1,16 +1,72 @@
-<div class="row">
-	<div class="col-md-6 offset-md-3 mt-5">
-		<div class="login_info">
-			{{form}}
-				<div class="alter-login text-center mt_30">
-					<p>
-						{{'New user?'|t}}
-						<a class="login-link" href="#">
-							{{'Signup'|t}}
-						</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+{% set icon_next = lang == "ar" ? 'fa-arrow-left' : 'fa-arrow-right' %}
+{% set icon_prev = lang == "ar" ? 'fa-arrow-right' : 'fa-arrow-left' %}
+
+<div class="row login-form" id="mustforms">
+  <div class="col-12">
+    <div class="card card00">
+
+      <div class="d-flex flex-md-row px-3 mt-4 flex-column p-60">
+        <div class="col-md-4">
+          <div class="card1">
+            <ul id="progressbar" class="text-center">
+              <li class="active step0"></li>
+              <li class="step0"></li>
+              <li class="step0"></li>
+            </ul>
+            <h6 class="mb-5">{{ 'Account Type'|t }}</h6>
+            <h6 class="mb-5">{{ 'Registration details'|t }}</h6>
+            <h6 class="mb-5">{{ 'Account details'|t }}</h6>
+          </div>
+        </div>
+        <div class="col-md-8">
+
+          <div class="card2 first-screen show ml-2">
+
+            {{ form.field_account_type }}
+
+            <div class="d-flex  justify-content-end px-3 mt-4">
+              <div id="back" class=" prev back-button text-center mt-1 ml-2 btn btn-danger">
+                <span class="fa {{ icon_prev }}"></span> {{ 'Back'|t }}
+              </div>
+              <div class="next-button text-center mt-1 ml-2 btn btn-primary">
+                {{ 'Next'|t }} <span class="fa {{ icon_next }}"></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card2 ml-2">
+            {{ form.group_type_collection }}
+            <div class="d-flex  justify-content-end  px-3 mt-4">
+              <div id="back" class=" prev back-button text-center mt-1 ml-2 btn btn-danger">
+                <span class="fa {{ icon_prev }}"></span> {{ 'Back'|t }}
+              </div>
+              <div class="next-button text-center mt-1 ml-2 btn btn-primary">
+                {{ 'Next'|t }} <span class="fa {{ icon_next }}"></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card2 ml-2">
+
+            {{ form|without('group_type_collection' , 'field_account_type','actions') }}
+
+            <div class="d-flex  justify-content-end align-items-center  px-3 mt-4">
+              <div id="back" class=" prev back-button text-center mt-1 ml-2 btn btn-danger">
+                <span class="fa {{ icon_prev }}"></span> {{ 'Back'|t }}
+              </div>
+              <div class="text-center mt-1 ml-2 btn btn-primary">
+                {{ form.actions.submit }}
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>

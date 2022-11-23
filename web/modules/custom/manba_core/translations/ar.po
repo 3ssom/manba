@@ -52,3 +52,12 @@ msgstr "إقرأ المزيد"
 
 msgid "Read more<span class="visually-hidden"> about @title</span>"
 msgstr "إقرأ المزيد<span class="visually-hidden"> عن @title</span>"
+
+msgid "Account Type"
+msgstr "نوع الحساب"
+
+msgid "Registration details"
+msgstr "بيانات التسجيل"
+
+msgid "Account details"
+msgstr "بيانات الحساب"

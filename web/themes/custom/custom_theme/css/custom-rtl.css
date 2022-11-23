@@ -2,63 +2,111 @@
 
 *,
 .f_p,
-.btn_get ,
+.btn_get,
 .f_widget.about-widget .f_list li a,
 .views-exposed-form .form-control,
-.faq_content .tab-pane .card .card-header .btn{
+.faq_content .tab-pane .card .card-header .btn {
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
+body {
+  font: 400 16px/26px "IBM Plex Sans Arabic", sans-serif
+}
+
+select,
+input,
+.form-control.text-full:not(.form-textarea),
+.form-control.form-number,
+.form-control.form-url,
+.form-control.form-email,
+.form-control.username,
+.form-control.password-field,
+.form-control.password-confirm {
+  font: 300 15px/60px "IBM Plex Sans Arabic", sans-serif
+}
 
 /* Menu */
 .menu>.nav-item:nth-child(1) {
   margin-left: 45px;
 }
+
 .menu>.nav-item.submenu .dropdown-menu,
 .views-exposed-form,
 .faq_content .tab-pane .card .card-header .btn {
   text-align: right;
 }
-.menu > .nav-item > .nav-link ,
-.menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link{
+
+.menu>.nav-item>.nav-link,
+.menu>.nav-item.submenu .dropdown-menu .nav-item .nav-link {
   font: 600 16px "IBM Plex Sans Arabic", sans-serif;
 }
-.faq_content .tab-pane .card .card-body{
+
+.faq_content .tab-pane .card .card-body {
   font: 300 15px/26px "IBM Plex Sans Arabic", sans-serif;
-  text-align:right;
+  text-align: right;
 
 }
+
 .footer_bottom .f_menu {
   text-align: left !important;
 }
-.footer_bottom .f_menu li + li {
+
+.footer_bottom .f_menu li+li {
   margin-right: 16px;
 }
-.footer_bottom .f_menu li + li:before{
+
+.footer_bottom .f_menu li+li:before {
   margin-left: 18px;
   margin-right: 0px;
 }
+
 .error_contain h2 {
   letter-spacing: 0;
   margin-bottom: 25px;
   font-weight: 700;
 }
+
 .login_info {
   text-align: right;
 }
-.offset-md-3{
+
+.offset-md-3 {
   margin-left: 0;
   margin-right: 25%;
 }
-.node--view-mode-teaser{
+
+.node--view-mode-teaser {
   text-align: right;
 }
 
-.faq_content .tab-pane .card .card-header .btn i{
+.faq_content .tab-pane .card .card-header .btn i {
   right: auto;
   left: 0;
 }
 
-.faq_content .tab-pane .card .card-header .btn{
+.faq_content .tab-pane .card .card-header .btn {
   padding: 20px 0px 20px 30px;
+}
+
+#mustforms #progressbar {
+  left: auto;
+  right: 0;
+}
+
+#mustforms #progressbar li:after {
+  left: auto;
+  right: 58px;
+}
+
+#mustforms .card1 {
+  margin-right: 88px;
+  z-index: 0;
+  border-left: 1px solid #F5F5F5;
+  border-right: none;
+  text-align: right;
+  margin-left: 0px;
+}
+
+#mustforms .card2 {
+  text-align: right;
 }

@@ -10,6 +10,7 @@ global-styling:
     vendors/nice-select/jquery.nice-select.min.js: {}
     js/plugins.js: {}
     js/main.js: {}
+    js/custom.js: {}
   css:
     theme:
       vendors/themify-icon/themify-icons.css: {}
