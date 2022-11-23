@@ -18,8 +18,10 @@ dependencies:
     - field.field.node.story.field_story_image
     - field.field.node.story.field_the_number_of_beneficiarie
     - field.field.node.story.field_the_number_of_members_of_t
+    - image.style.thumbnail
     - node.type.story
   module:
+    - svg_image
     - text
     - user
 id: node.story.teaser
@@ -28,17 +30,32 @@ bundle: story
 mode: teaser
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_trimmed
     label: hidden
     settings:
-      trim_length: 600
+      trim_length: 250
     third_party_settings: {  }
-    weight: 101
+    weight: 1
+    region: content
+  field_story_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
 hidden:
   comment: true
@@ -51,7 +68,6 @@ hidden:
   field_non_financial_advantages_d: true
   field_other_techniques: true
   field_project_date: true
-  field_story_image: true
   field_the_number_of_beneficiarie: true
   field_the_number_of_members_of_t: true
   langcode: true
