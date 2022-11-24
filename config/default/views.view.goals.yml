@@ -10,7 +10,7 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.page_categories
   content:
-    - 'taxonomy_term:page_categories:2a74f6fa-c9a1-4205-9a8c-f12b39e37b9a'
+    - 'taxonomy_term:page_categories:1f3e08d4-72cd-4e6e-afa2-03dd9e5e746c'
   module:
     - node
     - svg_image
@@ -213,7 +213,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            5: 5
+            1: 1
           group: 1
           exposed: false
           expose:
