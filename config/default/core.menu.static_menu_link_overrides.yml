@@ -9,17 +9,17 @@ definitions:
     expanded: false
     enabled: true
   user__logout:
+    weight: -46
     menu_name: account
     parent: ''
-    weight: -49
     expanded: true
     enabled: true
   user__page:
+    weight: -47
     menu_name: account
     parent: ''
-    weight: -50
-    expanded: false
     enabled: true
+    expanded: false
   standard__front_page:
     menu_name: main
     parent: ''
