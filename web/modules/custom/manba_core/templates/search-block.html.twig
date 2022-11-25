@@ -1,0 +1,32 @@
+<section class="slider_area">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-7 d-flex align-items-center">
+              <div class="slider_content">
+                  <h2 class="f_p f_700 f_size_40 l_height60">{{ drupal_config('system.site', 'slogan') }}</h2>
+                  <p class="f_300 l_height28 mt_30">{{ 'You can search through the source platform'|t }}
+                      <br>
+                      <span class="elm-typed w_color f_size_18" style="white-space:pre;"></span>
+                      <br>
+                      {{ 'Or enter the keywords you want to search for ...'|t }}
+                    </p>
+                      <div class="input-group subcribes">
+                          <input name='tags-outside' class='tagify--outside' placeholder='write tags to add below'>
+                        </div>
+
+                  <a href="#" class="slider_btn btn_hover mt_30 search-btn">{{ 'Search'|t }}</a>
+              </div>
+          </div>
+          <div class="col-lg-5">
+              <!-- <div class="mobile_img">
+                  <div class="img"><img class="women_img leaf wow fadeInDown" data-wow-delay="0.4s" src="/{{ active_theme_path() }}/img/home2/women.png" alt=""></div>
+                  <img class="mobile wow fadeInRight" data-wow-delay="0.1s" src="/{{ active_theme_path() }}/img/home2/mobile.png" alt="">
+              </div>
+          </div> -->
+      </div>
+  </div>
+  <img class="leaf l_left" src="/{{ active_theme_path() }}/img/home2/shape_02.png" alt="">
+  <img class="leaf l_right" src="/{{ active_theme_path() }}/img/home2/shape_03.png" alt="">
+  <img class="middle_shape" src="/{{ active_theme_path() }}/img/home2/shape_01.png" alt="">
+  <img class="bottom_shoape" src="/{{ active_theme_path() }}/img/home2/shape.png" alt="">
+</section>
