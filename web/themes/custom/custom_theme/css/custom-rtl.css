@@ -32,7 +32,8 @@ input,
 
 .menu>.nav-item.submenu .dropdown-menu,
 .views-exposed-form,
-.faq_content .tab-pane .card .card-header .btn {
+.faq_content .tab-pane .card .card-header .btn,
+.toolbar-menu-administration .toolbar-menu li.menu-item.menu-item--expanded {
   text-align: right;
 }
 
@@ -46,7 +47,8 @@ input,
   text-align: right;
 
 }
-.slider_btn{
+
+.slider_btn {
   font: 500 14px/20px "IBM Plex Sans Arabic", sans-serif;
 }
 
@@ -69,7 +71,8 @@ input,
   font-weight: 700;
 }
 
-.login_info, .slider_content {
+.login_info,
+.slider_content {
   text-align: right;
 }
 
@@ -112,4 +115,27 @@ input,
 
 #mustforms .card2 {
   text-align: right;
+}
+
+.leaf.l_left {
+  right: 260px;
+  left: auto;
+}
+.leaf.l_right{
+  left:0;
+  right: auto;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.slider_area .middle_shape {
+  right: auto;
+  left: 0;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
