@@ -387,3 +387,15 @@ tags.tagify {
 .toolbar-icon-9 .header_area {
   padding-top: 80px;
 }
+
+span.expert-promote {
+  position: absolute;
+  background: #2875bc;
+  padding: 5px 18px;
+  top: 10px;
+  left: 10px;
+  border-radius: 22px;
+  font-size: 12px;
+  z-index: 1;
+  color: #fff;
+}

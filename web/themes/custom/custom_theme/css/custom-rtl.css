@@ -139,3 +139,8 @@ input,
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+
+span.expert-promote{
+  right: 10px;
+  left: auto;
+}
