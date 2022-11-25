@@ -10,31 +10,6 @@
 		</header>
 	{% endif %}
 
-	<section class="saas_banner_area_two">
-		<div class="section_intro">
-			<div class="section_container">
-				<div class="intro">
-					<div class=" intro_content">
-						<h1 class="f_700 f_size_50 w_color f_p">{{ drupal_config('system.site', 'name') }}</h1>
-						<p class="w_color f_size_18">{{ drupal_config('system.site', 'slogan') }}</p>
-						<form class="mailchimp" method="post">
-							<div class="input-group subcribes">
-								<input type="text" name="EMAIL" class="form-control memail" placeholder="saasland@gmail.com">
-								<button class="btn btn_submit f_size_15 f_500" type="submit">Get Started</button>
-							</div>
-							<p class="mchimp-errmessage" style="display: none;"></p>
-							<p class="mchimp-sucmessage" style="display: none;"></p>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<img class="shap_img" src="/{{ active_theme_path() }}/img/home-10/shape.png" alt="">
-		<div class="animation_img wow fadeInUp" data-wow-delay="0.3s">
-			<img src="/{{ active_theme_path() }}/img/home-10/dashboard_img.png" alt="">
-		</div>
-	</section>
-
 	{{ page.content }}
 	{% if (page.footer or page.bottom_footer)  %}
 		<footer class="footer_area footer_dark_one footer_dark_ten pt_120">

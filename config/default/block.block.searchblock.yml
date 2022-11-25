@@ -1,0 +1,25 @@
+uuid: a7de1159-ef0b-4f60-8d16-724df0a36d66
+langcode: en
+status: true
+dependencies:
+  module:
+    - manba_core
+    - system
+  theme:
+    - custom_theme
+id: searchblock
+theme: custom_theme
+region: content
+weight: -12
+provider: null
+plugin: search_block
+settings:
+  id: search_block
+  label: 'Search block'
+  label_display: '0'
+  provider: manba_core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

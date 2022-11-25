@@ -33,9 +33,21 @@ bootstrap:
       css/bootstrap.min.css: {}
       vendors/bootstrap-selector/css/bootstrap-select.min.css: {}
 
+
 global-rtl-styling:
   js:
     js/custom-rtl.js: {}
   css:
     theme:
       css/custom-rtl.css: {}
+
+tagify:
+  js:
+    vendors/typed/typed.min.js: {}
+    vendors/tagify/js/tagify.min.js: {}
+    vendors/tagify/js/tagify.polyfills.min.js: {}
+    js/custom-tagify.js: {}
+  css:
+    theme:
+      vendors/tagify/css/tagify.css: {}
+

@@ -46,6 +46,9 @@ input,
   text-align: right;
 
 }
+.slider_btn{
+  font: 500 14px/20px "IBM Plex Sans Arabic", sans-serif;
+}
 
 .footer_bottom .f_menu {
   text-align: left !important;
@@ -66,7 +69,7 @@ input,
   font-weight: 700;
 }
 
-.login_info {
+.login_info, .slider_content {
   text-align: right;
 }
 

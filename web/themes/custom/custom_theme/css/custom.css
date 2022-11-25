@@ -221,9 +221,11 @@ nav.language-switcher-language-url a.language-link {
   width: 100px;
   height: 100px
 }
+
 .p-60 {
   padding: 60px;
 }
+
 .form-item-field-account-type {
   display: flex;
   flex-direction: column;
@@ -234,11 +236,11 @@ nav.language-switcher-language-url a.language-link {
   color: #D50000 !important
 }
 
-#mustforms .prev ,
-#mustforms .next-button
-{
+#mustforms .prev,
+#mustforms .next-button {
   padding: 13px 52px;
 }
+
 select,
 .form-control.text-full:not(.form-textarea),
 .form-control.form-number,
@@ -246,8 +248,7 @@ select,
 .form-control.form-email,
 .form-control.username,
 .form-control.password-field,
-.form-control.password-confirm
- {
+.form-control.password-confirm {
   font: 300 15px/60px "Poppins", sans-serif;
   color: #222d39;
   height: 60px;
@@ -259,7 +260,8 @@ select,
   border-color: #ddd;
   padding-left: 30px;
 }
-.form-control.text-full.form-textarea{
+
+.form-control.text-full.form-textarea {
   font: 300 15px/60px "Poppins", sans-serif;
   color: #222d39;
   border-radius: 4px;
@@ -270,18 +272,27 @@ select,
   border-color: #ddd;
   padding-left: 30px;
 }
-.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
+
+.custom-select.is-invalid,
+.form-control.is-invalid,
+.was-validated .custom-select:invalid,
+.was-validated .form-control:invalid {
   border-color: #dc3545 !important;
 }
+
 .card.card00.m-2.border-0 {
   background: #fff;
   -webkit-box-shadow: 0px 2px 3px 0px rgb(0 11 40 / 6%);
   box-shadow: 0px 2px 3px 0px rgb(0 11 40 / 6%);
 }
+
 @media screen and (max-width: 912px) {
-  #mustforms .prev, #mustforms .next-button{
+
+  #mustforms .prev,
+  #mustforms .next-button {
     padding: 13px 30px;
   }
+
   #mustforms .card00 {
     padding-top: 30px
   }
@@ -313,4 +324,62 @@ select,
   #mustforms #progressbar {
     left: -25px
   }
+}
+
+/* tagify */
+.tagify {
+  border: none !important;
+}
+
+.tagify--outside {
+  border: 0;
+}
+
+.tagify--outside .tagify__input {
+  order: -1;
+  flex: 100%;
+  border: 1px solid var(--tags-border-color);
+  margin-bottom: 1em;
+  transition: .1s;
+  margin-top: 0px;
+  margin-right:0px;
+  margin-left:0px;
+}
+
+.tagify--outside .tagify__input:hover {
+  border-color: var(--tags-hover-border-color);
+}
+
+.tagify--outside.tagify--focus .tagify__input {
+  transition: 0s;
+  border-color: var(--tags-focus-border-color);
+}
+
+span.tagify__input {
+  border-radius: 4px;
+  background-color: white;
+  -webkit-box-shadow: 0px 8px 16px 0px rgb(0 11 40 / 10%);
+  box-shadow: 0px 8px 16px 0px rgb(0 11 40 / 10%);
+  font: 300 16px/36px "Poppins", sans-serif;
+  border: 0px;
+  color: #a1a8be;
+  height: 60px;
+  padding-left: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+tags.tagify {
+  width: 460px !important;
+}
+
+.section_container .intro_content p {
+  margin-bottom: 0px;
+}
+
+.mailchimp {
+  margin-top: 20px;
+}
+.js-form-item.js-form-type-item.form-type-item.js-form-item-.form-item-.form-no-label.mb-3 {
+  margin: 0 !important;
 }

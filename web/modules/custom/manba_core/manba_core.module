@@ -50,6 +50,10 @@ function manba_core_theme()
       'variables' => array('items' => null,),
       'template' => 'user-account-block',
     ),
+    'search_block' => array(
+      'variables' => array('items' => null,),
+      'template' => 'search-block',
+    ),
   ];
 }
 

@@ -12,7 +12,7 @@ dependencies:
 id: views_block__goals_list
 theme: custom_theme
 region: content
-weight: -12
+weight: -11
 provider: null
 plugin: 'views_block:goals-list'
 settings:
