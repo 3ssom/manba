@@ -1,6 +1,6 @@
 uuid: 3b57098d-5838-445d-b859-fbcf6c1d55d3
 langcode: ar
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -12,7 +12,7 @@ _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
 id: custom_theme_account_menu
 theme: custom_theme
-region: secondary_menu
+region: top_header
 weight: -6
 provider: null
 plugin: 'system_menu_block:account'
