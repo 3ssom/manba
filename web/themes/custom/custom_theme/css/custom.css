@@ -399,3 +399,7 @@ span.expert-promote {
   z-index: 1;
   color: #fff;
 }
+
+span.expert-promote i {
+  margin-right: 4px;
+}

@@ -61,3 +61,12 @@ msgstr "بيانات التسجيل"
 
 msgid "Account details"
 msgstr "بيانات الحساب"
+
+msgid "Administrative member"
+msgstr "عضو إداري"
+
+msgid "You can search through the source platform"
+msgstr "يمكنك البحث من خلال المنصة بالكلمات الدليلة التالية"
+
+msgid "Or enter the keywords you want to search for ..."
+msgstr "أو بإمكانك إدخال الكلمات التي تريد البحث بها ..."

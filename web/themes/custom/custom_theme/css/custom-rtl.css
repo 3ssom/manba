@@ -144,3 +144,6 @@ span.expert-promote{
   right: 10px;
   left: auto;
 }
+span.expert-promote i {
+  margin-left: 4px;
+}
