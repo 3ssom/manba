@@ -403,3 +403,34 @@ span.expert-promote {
 span.expert-promote i {
   margin-right: 4px;
 }
+
+.calender-pager ul.js-pager__items {
+  display: flex;
+  padding: 0px;
+}
+.calender-pager ul.js-pager__items li {
+  padding: 2px 22px;
+  border: 1px solid var(--main-color);;
+  margin: 0 0 0 -1px;
+}
+.calender-pager ul.js-pager__items li a {
+  color: var(--main-color);
+}
+.calender-pager li.pager__item.pager__item--previous {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.calender-pager li.pager__item.pager__item--next {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+tr.date-box {
+  border-bottom: none;
+}
+
+.calendar-calendar .month-view .full tr td.multi-day, .calendar-calendar .month-view .full tr td.single-day{
+  padding: 20px 0px;
+}
+
