@@ -434,3 +434,23 @@ tr.date-box {
   padding: 20px 0px;
 }
 
+.text-formatted {
+  overflow-wrap: break-word;
+}
+
+.field--name-field-project-category a,
+.field--name-field-software-license a {
+  background: #e7e7e7;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 37px;
+  margin: 10px 0px;
+}
+
+.field.field--name-field-project-link {
+  margin-bottom: 30px;
+}
+article.comment {
+  width: 100%;
+  text-align: right;
+}
