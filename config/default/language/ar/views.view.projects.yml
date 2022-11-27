@@ -1,0 +1,10 @@
+label: المشاريع
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<div class=\"sec_title text-center mb_70\">\r\n<h2 class=\"f_p f_size_30 l_height30 f_700 t_color3 mb_20 wow fadeInUp\">[view:title]</h2>\r\n\r\n<p class=\"f_300 f_size_16 wow fadeInUp\" data-wow-delay=\"0.2s\">Open source solutions</p>\r\n</div>\r\n"
+            format: full_html
+      title: المشاريع

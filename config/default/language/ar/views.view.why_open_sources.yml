@@ -1,0 +1,10 @@
+label: 'لماذا المصدر المفتوح'
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<h2 class=\"f_size_30 f_600 t_color3 l_height45 text-center mb_90 wow fadeInUp\" data-wow-delay=\"0.3s\">[view:title]</h2>\r\n"
+            format: full_html
+      title: 'لماذا المصدر المفتوح'

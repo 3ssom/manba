@@ -1,0 +1,5 @@
+label: 'الشركات المتخصصة'
+display:
+  default:
+    display_options:
+      title: 'منظمات وشركات المصدر المفتوح'
