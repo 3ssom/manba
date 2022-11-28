@@ -1057,7 +1057,7 @@ display:
           click_sort_column: value
           type: boolean
           settings:
-            format: default
+            format: boolean
             format_custom_false: ''
             format_custom_true: ''
           group_column: value
@@ -1082,7 +1082,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"ex_team_item wow fadeInUp\" data-wow-delay=\"0.2s\">\r\n{% if field_staff == 'On' %}\r\n    <span class=\"expert-promote\"><i class=\"fas fa-check\"></i> {{ 'Administrative member'|t }}</span>\r\n{% endif %}\r\n    {{ user_picture }}\r\n    <div class=\"team_content\">\r\n        <a href=\"{{ view_user }}\">\r\n            <h3 class=\"f_p f_size_16 f_600 t_color3\">{{ field_full_name }}</h3>\r\n        </a>\r\n        <h5>{{ field_practice_area }}</h5>\r\n    </div>\r\n    <div class=\"hover_content\">\r\n        <div class=\"n_hover_content\">\r\n            <ul class=\"list-unstyled\">\r\n                {% if field_github %}\r\n                <li><a href=\"{{ field_github }}\"><i class=\"fab fa-github\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_twitter %}\r\n                <li><a href=\"{{ field_twitter }}\"><i class=\"fab fa-twitter\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_linkedin %}\r\n                <li><a href=\"{{ field_linkedin }}\"><i class=\"fab fa-linkedin-in\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_website %}\r\n                <li><a href=\"{{ field_website }}\"><i class=\"fa fa-globe\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_drupal %}\r\n                <li><a href=\"{{ field_drupal }}\"><i class=\"fab fa-drupal\"></i></a></li>\r\n                {% endif %}\r\n            </ul>\r\n            <div class=\"br\"></div>\r\n            <h3 class=\"f_p f_size_16 f_600 w_color\">{{ field_full_name }}</h3>\r\n            <h5>{{ field_practice_area }}</h5>\r\n        </div>\r\n    </div>\r\n</div>"
+            text: "<div class=\"ex_team_item wow fadeInUp\" data-wow-delay=\"0.2s\">\r\n{% if field_staff %}\r\n    <span class=\"expert-promote\"><i class=\"fas fa-check\"></i> {{ 'Administrative member'|t }}</span>\r\n{% endif %}\r\n    {{ user_picture }}\r\n    <div class=\"team_content\">\r\n            <h3 class=\"f_p f_size_16 f_600 t_color3\">{{ field_full_name }}</h3>\r\n        <h5>{{ field_practice_area }}</h5>\r\n    </div>\r\n    <div class=\"hover_content\">\r\n        <div class=\"n_hover_content\">\r\n            <ul class=\"list-unstyled\">\r\n                {% if field_github %}\r\n                <li><a href=\"{{ field_github }}\"><i class=\"fab fa-github\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_twitter %}\r\n                <li><a href=\"{{ field_twitter }}\"><i class=\"fab fa-twitter\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_linkedin %}\r\n                <li><a href=\"{{ field_linkedin }}\"><i class=\"fab fa-linkedin-in\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_website %}\r\n                <li><a href=\"{{ field_website }}\"><i class=\"fa fa-globe\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_drupal %}\r\n                <li><a href=\"{{ field_drupal }}\"><i class=\"fab fa-drupal\"></i></a></li>\r\n                {% endif %}\r\n            </ul>\r\n            <div class=\"br\"></div>\r\n        <a href=\"{{ view_user }}\">\r\n            <h3 class=\"f_p f_size_16 f_600 w_color\">{{ field_full_name }}</h3>\r\n            <h5>{{ field_practice_area }}</h5>\r\n</a>\r\n        </div>\r\n    </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1823,7 +1823,7 @@ display:
           click_sort_column: value
           type: boolean
           settings:
-            format: default
+            format: boolean
             format_custom_false: ''
             format_custom_true: ''
           group_column: value
@@ -1848,7 +1848,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"ex_team_item wow fadeInUp\" data-wow-delay=\"0.2s\">\r\n{% if field_staff %}\r\n    <span class=\"expert-promote\"><i class=\"fas fa-check\"></i> {{ 'Administrative member'|t }}</span>\r\n{% endif %}\r\n    {{ user_picture }}\r\n    <div class=\"team_content\">\r\n        <a href=\"{{ view_user }}\">\r\n            <h3 class=\"f_p f_size_16 f_600 t_color3\">{{ field_full_name }}</h3>\r\n        </a>\r\n        <h5>{{ field_practice_area }}</h5>\r\n    </div>\r\n    <div class=\"hover_content\">\r\n        <div class=\"n_hover_content\">\r\n            <ul class=\"list-unstyled\">\r\n                {% if field_github %}\r\n                <li><a href=\"{{ field_github }}\"><i class=\"fab fa-github\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_twitter %}\r\n                <li><a href=\"{{ field_twitter }}\"><i class=\"fab fa-twitter\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_linkedin %}\r\n                <li><a href=\"{{ field_linkedin }}\"><i class=\"fab fa-linkedin-in\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_website %}\r\n                <li><a href=\"{{ field_website }}\"><i class=\"fa fa-globe\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_drupal %}\r\n                <li><a href=\"{{ field_drupal }}\"><i class=\"fab fa-drupal\"></i></a></li>\r\n                {% endif %}\r\n            </ul>\r\n            <div class=\"br\"></div>\r\n            <h3 class=\"f_p f_size_16 f_600 w_color\">{{ field_full_name }}</h3>\r\n            <h5>{{ field_practice_area }}</h5>\r\n        </div>\r\n    </div>\r\n</div>"
+            text: "<div class=\"ex_team_item wow fadeInUp\" data-wow-delay=\"0.2s\">\r\n{% if field_staff %}\r\n    <span class=\"expert-promote\"><i class=\"fas fa-check\"></i> {{ 'Administrative member'|t }}</span>\r\n{% endif %}\r\n    {{ user_picture }}\r\n    <div class=\"team_content\">\r\n            <h3 class=\"f_p f_size_16 f_600 t_color3\">{{ field_full_name }}</h3>\r\n        <h5>{{ field_practice_area }}</h5>\r\n    </div>\r\n    <div class=\"hover_content\">\r\n        <div class=\"n_hover_content\">\r\n            <ul class=\"list-unstyled\">\r\n                {% if field_github %}\r\n                <li><a href=\"{{ field_github }}\"><i class=\"fab fa-github\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_twitter %}\r\n                <li><a href=\"{{ field_twitter }}\"><i class=\"fab fa-twitter\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_linkedin %}\r\n                <li><a href=\"{{ field_linkedin }}\"><i class=\"fab fa-linkedin-in\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_website %}\r\n                <li><a href=\"{{ field_website }}\"><i class=\"fa fa-globe\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_drupal %}\r\n                <li><a href=\"{{ field_drupal }}\"><i class=\"fab fa-drupal\"></i></a></li>\r\n                {% endif %}\r\n            </ul>\r\n            <div class=\"br\"></div>\r\n            <a href=\"{{ view_user }}\"><h3 class=\"f_p f_size_16 f_600 w_color\">{{ field_full_name }}</h3>\r\n            <h5>{{ field_practice_area }}</h5>\r\n</a>\r\n        </div>\r\n    </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1885,6 +1885,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 4
       style:
         type: views_bootstrap_grid
         options:
@@ -1905,6 +1910,7 @@ display:
           hide_empty: false
       defaults:
         title: false
+        pager: false
         use_more: false
         use_more_always: false
         use_more_text: false
@@ -1940,7 +1946,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - user.permissions
       tags:
         - 'config:field.storage.user.field_drupal'

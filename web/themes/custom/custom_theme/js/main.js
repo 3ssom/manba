@@ -1,6 +1,8 @@
 (function ($) {
   "use strict";
 
+  var langcode = drupalSettings.langcode;
+  var rtl = drupalSettings.langcode == "ar" ? true : false;
   /*-------------------------------------------------------------------------------
 	  Navbar
 	-------------------------------------------------------------------------------*/
@@ -65,6 +67,7 @@
     var service_slider = $(".service_carousel");
     if (service_slider.length) {
       service_slider.owlCarousel({
+        rtl: rtl,
         loop: true,
         margin: 15,
         items: 4,
@@ -103,6 +106,7 @@
     var reviews_slider2 = $(".about_img_slider");
     if (reviews_slider2.length) {
       reviews_slider2.owlCarousel({
+        rtl: rtl,
         loop: true,
         margin: 0,
         items: 1,
@@ -121,6 +125,7 @@
     var feedback_slider = $(".feedback_slider");
     if (feedback_slider.length) {
       feedback_slider.owlCarousel({
+        rtl: rtl,
         loop: true,
         margin: 20,
         items: 3,
@@ -152,6 +157,7 @@
     var testimonialSlider = $(".testimonial_slider");
     if (testimonialSlider.length) {
       testimonialSlider.owlCarousel({
+        rtl: rtl,
         loop: true,
         margin: 10,
         items: 1,
@@ -178,12 +184,10 @@
     var app_testimonialSlider = $(".app_testimonial_slider");
     if (app_testimonialSlider.length) {
       app_testimonialSlider.owlCarousel({
-        loop: true,
+        rtl: rtl,
         margin: 10,
         items: 1,
-        autoplay: true,
         smartSpeed: 2000,
-        autoplaySpeed: true,
         responsiveClass: true,
         nav: true,
         dot: true,
@@ -203,7 +207,7 @@
     var app_service_info = $(".app_service_info");
     if (app_service_info.length) {
       app_service_info.owlCarousel({
-        loop: true,
+        rtl: rtl,
         margin: 10,
         items: 3,
         autoplaySpeed: true,
@@ -213,7 +217,7 @@
           '<i class="ti-arrow-left"></i>',
           '<i class="ti-arrow-right"></i>',
         ],
-        navContainer: ".nav_container",
+        navContainer: ".nav_container_projects",
       });
     }
   }
@@ -225,6 +229,7 @@
     var app_screenshotSlider = $(".app_screenshot_slider");
     if (app_screenshotSlider.length) {
       app_screenshotSlider.owlCarousel({
+        rtl: rtl,
         loop: true,
         margin: 10,
         items: 5,
@@ -264,6 +269,7 @@
     var p_Slider = $(".pr_slider");
     if (p_Slider.length) {
       p_Slider.owlCarousel({
+        rtl: rtl,
         loop: true,
         margin: 10,
         items: 1,
@@ -319,6 +325,7 @@
     var pr_image = $(".pr_image");
     if (pr_image.length) {
       pr_image.owlCarousel({
+        rtl: rtl,
         loop: true,
         items: 1,
         autoplay: true,

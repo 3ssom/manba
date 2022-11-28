@@ -33,7 +33,9 @@ input,
 .menu>.nav-item.submenu .dropdown-menu,
 .views-exposed-form,
 .faq_content .tab-pane .card .card-header .btn,
-.toolbar-menu-administration .toolbar-menu li.menu-item.menu-item--expanded {
+.toolbar-menu-administration .toolbar-menu li.menu-item.menu-item--expanded,
+article,
+.sidebar .block {
   text-align: right;
 }
 
@@ -146,4 +148,15 @@ span.expert-promote{
 }
 span.expert-promote i {
   margin-left: 4px;
+}
+div.fivestar-widget .cancel, div.fivestar-widget .star{
+  float: right;
+}
+.blog-sidebar .widget.widget-recent-post .post_item .media-body{
+  padding-left: 0px;
+  padding-right: 20px;
+}
+.blog-sidebar{
+  padding-right: 40px;
+  padding-left: 0px;
 }

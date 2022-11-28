@@ -97,7 +97,7 @@
       </main>
 
       {% if page.sidebar %}
-      <div {{ sidebar_first_attributes }}>
+      <div {{ sidebar_first_attributes.addClass('blog-sidebar') }}>
         <aside class="section" role="complementary">
           {{ page.sidebar }}
         </aside>

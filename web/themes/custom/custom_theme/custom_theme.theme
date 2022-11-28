@@ -14,8 +14,10 @@ use Drupal\Core\Form\FormStateInterface;
 function custom_theme_preprocess(&$variables, $hook)
 {
   $lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $is_front = \Drupal::service('path.matcher')->isFrontPage();
   $variables['lang'] = $lang;
-
+  $variables['#attached']['drupalSettings']['is_front'] = $is_front;
+  $variables['#attached']['drupalSettings']['langcode'] = $lang;
 }
 
 /**
