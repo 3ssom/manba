@@ -1,6 +1,5 @@
 {% set icon_next = lang == "ar" ? 'fa-arrow-left' : 'fa-arrow-right' %}
 {% set icon_prev = lang == "ar" ? 'fa-arrow-right' : 'fa-arrow-left' %}
-
 <div class="row login-form" id="mustforms">
   <div class="col-12">
     <div class="card card00">
@@ -9,21 +8,20 @@
         <div class="col-md-4">
           <div class="card1">
             <ul id="progressbar" class="text-center">
-              <li class="active step0"></li>
-              <li class="step0"></li>
+              {% if not logged_in %} <li class="active step0"></li>{% endif %}
+              <li class="{{ logged_in ? 'active' }} step0"></li>
               <li class="step0"></li>
             </ul>
-            <h6 class="mb-5">{{ 'Account Type'|t }}</h6>
+            {% if not logged_in %}<h6 class="mb-5">{{ 'Account Type'|t }}</h6>{% endif %}
             <h6 class="mb-5">{{ 'Registration details'|t }}</h6>
             <h6 class="mb-5">{{ 'Account details'|t }}</h6>
           </div>
         </div>
         <div class="col-md-8">
 
+          {% if not logged_in %}
           <div class="card2 first-screen show ml-2">
-
             {{ form.field_account_type }}
-
             <div class="d-flex  justify-content-end px-3 mt-4">
               <div id="back" class=" prev back-button text-center mt-1 ml-2 btn btn-danger">
                 <span class="fa {{ icon_prev }}"></span> {{ 'Back'|t }}
@@ -33,14 +31,16 @@
               </div>
             </div>
           </div>
+          {% endif %}
 
-
-          <div class="card2 ml-2">
+          <div class="card2 {{ logged_in ? 'show' }} ml-2">
             {{ form.group_type_collection }}
             <div class="d-flex  justify-content-end  px-3 mt-4">
+              {% if not logged_in %}
               <div id="back" class=" prev back-button text-center mt-1 ml-2 btn btn-danger">
                 <span class="fa {{ icon_prev }}"></span> {{ 'Back'|t }}
               </div>
+              {% endif %}
               <div class="next-button text-center mt-1 ml-2 btn btn-primary">
                 {{ 'Next'|t }} <span class="fa {{ icon_next }}"></span>
               </div>

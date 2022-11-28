@@ -116,6 +116,10 @@ function manba_core_form_alter(&$form, FormStateInterface $form_state, $form_id)
     unset($form['field_github']['widget'][0]['uri']['#description']);
     unset($form['field_twitter']['widget'][0]['uri']['#description']);
     $form['#attributes']['novalidate'] = 'novalidate';
-
+  }
+  if ($form_id == 'user_form') {
+    if (!\Drupal::currentUser()->isAnonymous()) {
+      $form['field_account_type']['#disabled'] = 'disabled';
+    }
   }
 }
