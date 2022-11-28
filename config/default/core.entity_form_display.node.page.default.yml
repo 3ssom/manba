@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_page_category
     - field.field.node.page.field_page_image
+    - field.field.node.page.field_target
     - image.style.thumbnail
     - node.type.page
   module:
@@ -35,12 +35,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_page_category:
-    type: options_select
-    weight: 122
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_page_image:
     type: image_image
     weight: 121
@@ -48,6 +42,12 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_target:
+    type: options_select
+    weight: 123
+    region: content
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

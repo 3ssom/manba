@@ -1,0 +1,21 @@
+uuid: f645d6a1-989b-4478-bb52-69e144c8dbce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target
+    - node.type.page
+  module:
+    - options
+id: node.page.field_target
+field_name: field_target
+entity_type: node
+bundle: page
+label: Target
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

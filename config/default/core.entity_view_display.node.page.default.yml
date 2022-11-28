@@ -4,10 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_page_category
     - field.field.node.page.field_page_image
+    - field.field.node.page.field_target
     - node.type.page
   module:
+    - options
     - svg_image
     - text
     - user
@@ -25,14 +26,6 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-  field_page_category:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 103
-    region: content
   field_page_image:
     type: image
     label: above
@@ -47,6 +40,13 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_target:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
     region: content
   links:
     weight: 101

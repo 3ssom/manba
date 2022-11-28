@@ -8,13 +8,10 @@ dependencies:
     - field.storage.node.field_page_image
     - image.style.thumbnail
     - node.type.page
-    - taxonomy.vocabulary.page_categories
-  content:
-    - 'taxonomy_term:page_categories:2a74f6fa-c9a1-4205-9a8c-f12b39e37b9a'
   module:
     - node
+    - options
     - svg_image
-    - taxonomy
     - text
     - user
     - views_bootstrap
@@ -203,17 +200,17 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_page_category_target_id:
-          id: field_page_category_target_id
-          table: node__field_page_category
-          field: field_page_category_target_id
+        field_target_value:
+          id: field_target_value
+          table: node__field_target
+          field: field_target_value
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: taxonomy_index_tid
+          plugin_id: list_field
           operator: or
           value:
-            5: 5
+            Goals: Goals
           group: 1
           exposed: false
           expose:
@@ -244,11 +241,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          vid: page_categories
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
       style:
         type: default
         options:
@@ -290,7 +282,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -484,7 +475,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_summary_or_trimmed
+          type: text_trimmed
           settings:
             trim_length: 120
           group_column: value
@@ -581,7 +572,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -643,7 +633,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
