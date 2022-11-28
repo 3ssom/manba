@@ -1,0 +1,8 @@
+uuid: 1bc8d3da-1641-498f-b4c7-83942a5c90d0
+langcode: ar
+status: true
+dependencies: {  }
+name: 'الكلمات الدليلية'
+vid: keywords
+description: 'الكلمات الدليلية التي تظهر في صندوق البحث سواء عن طريق البحث او مقترحات للبحث .'
+weight: 0

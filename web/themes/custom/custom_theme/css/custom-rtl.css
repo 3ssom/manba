@@ -5,14 +5,22 @@
 .btn_get,
 .f_widget.about-widget .f_list li a,
 .views-exposed-form .form-control,
-.faq_content .tab-pane .card .card-header .btn {
+.faq_content .tab-pane .card .card-header .btn ,
+.tagify--outside .tagify__input{
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 body {
   font: 400 16px/26px "IBM Plex Sans Arabic", sans-serif
 }
-
+.tagify .tagify__input {
+  direction: rtl;
+  text-align: right;
+}
+.tagify__dropdown {
+  direction: rtl;
+  text-align: right;
+}
 select,
 input,
 .form-control.text-full:not(.form-textarea),

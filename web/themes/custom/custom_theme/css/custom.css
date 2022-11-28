@@ -200,6 +200,9 @@ nav.language-switcher-language-url a.language-link {
 #mustforms #progressbar li:nth-child(2):after {
   top: 0px
 }
+span.elm-typed.w_color {
+  font-weight: bold;
+}
 
 #mustforms #progressbar li:first-child:after {
   position: absolute;

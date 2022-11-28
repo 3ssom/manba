@@ -1,0 +1,23 @@
+uuid: 112bf1ae-0b26-42c2-a104-6287e09aa110
+langcode: ar
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_suggestion
+    - taxonomy.vocabulary.keywords
+id: taxonomy_term.keywords.field_suggestion
+field_name: field_suggestion
+entity_type: taxonomy_term
+bundle: keywords
+label: مقترح
+description: 'عند تفعيل هذا الخيار سيتم إظهار هذا التصنيف كمقترح للبحث .'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: في
+  off_label: إيقاف
+field_type: boolean

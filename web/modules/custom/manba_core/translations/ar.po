@@ -70,3 +70,6 @@ msgstr "يمكنك البحث من خلال المنصة بالكلمات الد
 
 msgid "Or enter the keywords you want to search for ..."
 msgstr "أو بإمكانك إدخال الكلمات التي تريد البحث بها ..."
+
+msgid "Write tags to add below"
+msgstr "ادخل الوسوم هنا لإضافتها بالاسفل"
