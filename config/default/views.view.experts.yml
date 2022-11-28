@@ -8,6 +8,7 @@ dependencies:
     - field.storage.user.field_github
     - field.storage.user.field_linkedin
     - field.storage.user.field_practice_area
+    - field.storage.user.field_staff
     - field.storage.user.field_twitter
     - field.storage.user.field_website
     - field.storage.user.user_picture
@@ -16,6 +17,7 @@ dependencies:
   module:
     - better_exposed_filters
     - link
+    - node
     - options
     - svg_image
     - user
@@ -233,6 +235,19 @@ display:
           content: 'No Experts added yet.'
           tokenize: false
       sorts:
+        field_staff_value:
+          id: field_staff_value
+          table: user__field_staff
+          field: field_staff_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
         created:
           id: created
           table: users_field_data
@@ -373,7 +388,18 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        uid:
+          id: uid
+          table: users_field_data
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: nodes
+          entity_type: user
+          entity_field: uid
+          plugin_id: standard
+          required: false
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -979,6 +1005,71 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_staff:
+          id: field_staff
+          table: user__field_staff
+          field: field_staff
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: default
+            format_custom_false: ''
+            format_custom_true: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         nothing:
           id: nothing
           table: views
@@ -991,7 +1082,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"ex_team_item wow fadeInUp\" data-wow-delay=\"0.2s\">\r\n    <span class=\"expert-promote\"><i class=\"fas fa-check\"></i> {{ 'Administrative member'|t }}</span>\r\n    {{ user_picture }}\r\n    <div class=\"team_content\">\r\n        <a href=\"{{ view_user }}\">\r\n            <h3 class=\"f_p f_size_16 f_600 t_color3\">{{ field_full_name }}</h3>\r\n        </a>\r\n        <h5>{{ field_practice_area }}</h5>\r\n    </div>\r\n    <div class=\"hover_content\">\r\n        <div class=\"n_hover_content\">\r\n            <ul class=\"list-unstyled\">\r\n                {% if field_github %}\r\n                <li><a href=\"{{ field_github }}\"><i class=\"fab fa-github\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_twitter %}\r\n                <li><a href=\"{{ field_twitter }}\"><i class=\"fab fa-twitter\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_linkedin %}\r\n                <li><a href=\"{{ field_linkedin }}\"><i class=\"fab fa-linkedin-in\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_website %}\r\n                <li><a href=\"{{ field_website }}\"><i class=\"fa fa-globe\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_drupal %}\r\n                <li><a href=\"{{ field_drupal }}\"><i class=\"fab fa-drupal\"></i></a></li>\r\n                {% endif %}\r\n            </ul>\r\n            <div class=\"br\"></div>\r\n            <h3 class=\"f_p f_size_16 f_600 w_color\">{{ field_full_name }}</h3>\r\n            <h5>{{ field_practice_area }}</h5>\r\n        </div>\r\n    </div>\r\n</div>"
+            text: "<div class=\"ex_team_item wow fadeInUp\" data-wow-delay=\"0.2s\">\r\n{% if field_staff == 'On' %}\r\n    <span class=\"expert-promote\"><i class=\"fas fa-check\"></i> {{ 'Administrative member'|t }}</span>\r\n{% endif %}\r\n    {{ user_picture }}\r\n    <div class=\"team_content\">\r\n        <a href=\"{{ view_user }}\">\r\n            <h3 class=\"f_p f_size_16 f_600 t_color3\">{{ field_full_name }}</h3>\r\n        </a>\r\n        <h5>{{ field_practice_area }}</h5>\r\n    </div>\r\n    <div class=\"hover_content\">\r\n        <div class=\"n_hover_content\">\r\n            <ul class=\"list-unstyled\">\r\n                {% if field_github %}\r\n                <li><a href=\"{{ field_github }}\"><i class=\"fab fa-github\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_twitter %}\r\n                <li><a href=\"{{ field_twitter }}\"><i class=\"fab fa-twitter\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_linkedin %}\r\n                <li><a href=\"{{ field_linkedin }}\"><i class=\"fab fa-linkedin-in\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_website %}\r\n                <li><a href=\"{{ field_website }}\"><i class=\"fa fa-globe\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_drupal %}\r\n                <li><a href=\"{{ field_drupal }}\"><i class=\"fab fa-drupal\"></i></a></li>\r\n                {% endif %}\r\n            </ul>\r\n            <div class=\"br\"></div>\r\n            <h3 class=\"f_p f_size_16 f_600 w_color\">{{ field_full_name }}</h3>\r\n            <h5>{{ field_practice_area }}</h5>\r\n        </div>\r\n    </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1084,6 +1175,7 @@ display:
         - 'config:field.storage.user.field_github'
         - 'config:field.storage.user.field_linkedin'
         - 'config:field.storage.user.field_practice_area'
+        - 'config:field.storage.user.field_staff'
         - 'config:field.storage.user.field_twitter'
         - 'config:field.storage.user.field_website'
         - 'config:field.storage.user.user_picture'
@@ -1679,6 +1771,71 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_staff:
+          id: field_staff
+          table: user__field_staff
+          field: field_staff
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: default
+            format_custom_false: ''
+            format_custom_true: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         nothing:
           id: nothing
           table: views
@@ -1691,7 +1848,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"ex_team_item wow fadeInUp\" data-wow-delay=\"0.2s\">\r\n    <span class=\"expert-promote\"><i class=\"fas fa-check\"></i> {{ 'Administrative member'|t }}</span>\r\n    {{ user_picture }}\r\n    <div class=\"team_content\">\r\n        <a href=\"{{ view_user }}\">\r\n            <h3 class=\"f_p f_size_16 f_600 t_color3\">{{ field_full_name }}</h3>\r\n        </a>\r\n        <h5>{{ field_practice_area }}</h5>\r\n    </div>\r\n    <div class=\"hover_content\">\r\n        <div class=\"n_hover_content\">\r\n            <ul class=\"list-unstyled\">\r\n                {% if field_github %}\r\n                <li><a href=\"{{ field_github }}\"><i class=\"fab fa-github\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_twitter %}\r\n                <li><a href=\"{{ field_twitter }}\"><i class=\"fab fa-twitter\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_linkedin %}\r\n                <li><a href=\"{{ field_linkedin }}\"><i class=\"fab fa-linkedin-in\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_website %}\r\n                <li><a href=\"{{ field_website }}\"><i class=\"fa fa-globe\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_drupal %}\r\n                <li><a href=\"{{ field_drupal }}\"><i class=\"fab fa-drupal\"></i></a></li>\r\n                {% endif %}\r\n            </ul>\r\n            <div class=\"br\"></div>\r\n            <h3 class=\"f_p f_size_16 f_600 w_color\">{{ field_full_name }}</h3>\r\n            <h5>{{ field_practice_area }}</h5>\r\n        </div>\r\n    </div>\r\n</div>"
+            text: "<div class=\"ex_team_item wow fadeInUp\" data-wow-delay=\"0.2s\">\r\n{% if field_staff %}\r\n    <span class=\"expert-promote\"><i class=\"fas fa-check\"></i> {{ 'Administrative member'|t }}</span>\r\n{% endif %}\r\n    {{ user_picture }}\r\n    <div class=\"team_content\">\r\n        <a href=\"{{ view_user }}\">\r\n            <h3 class=\"f_p f_size_16 f_600 t_color3\">{{ field_full_name }}</h3>\r\n        </a>\r\n        <h5>{{ field_practice_area }}</h5>\r\n    </div>\r\n    <div class=\"hover_content\">\r\n        <div class=\"n_hover_content\">\r\n            <ul class=\"list-unstyled\">\r\n                {% if field_github %}\r\n                <li><a href=\"{{ field_github }}\"><i class=\"fab fa-github\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_twitter %}\r\n                <li><a href=\"{{ field_twitter }}\"><i class=\"fab fa-twitter\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_linkedin %}\r\n                <li><a href=\"{{ field_linkedin }}\"><i class=\"fab fa-linkedin-in\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_website %}\r\n                <li><a href=\"{{ field_website }}\"><i class=\"fa fa-globe\"></i></a></li>\r\n                {% endif %}\r\n                {% if field_drupal %}\r\n                <li><a href=\"{{ field_drupal }}\"><i class=\"fab fa-drupal\"></i></a></li>\r\n                {% endif %}\r\n            </ul>\r\n            <div class=\"br\"></div>\r\n            <h3 class=\"f_p f_size_16 f_600 w_color\">{{ field_full_name }}</h3>\r\n            <h5>{{ field_practice_area }}</h5>\r\n        </div>\r\n    </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1791,6 +1948,7 @@ display:
         - 'config:field.storage.user.field_github'
         - 'config:field.storage.user.field_linkedin'
         - 'config:field.storage.user.field_practice_area'
+        - 'config:field.storage.user.field_staff'
         - 'config:field.storage.user.field_twitter'
         - 'config:field.storage.user.field_website'
         - 'config:field.storage.user.user_picture'

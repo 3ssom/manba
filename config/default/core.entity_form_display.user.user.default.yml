@@ -20,6 +20,7 @@ dependencies:
     - field.field.user.user.field_organization_image
     - field.field.user.user.field_organization_name
     - field.field.user.user.field_practice_area
+    - field.field.user.user.field_staff
     - field.field.user.user.field_summary
     - field.field.user.user.field_supported_open_source_tech
     - field.field.user.user.field_twitter
@@ -40,6 +41,7 @@ third_party_settings:
   field_group:
     group_type_collection:
       children:
+        - field_account_type
         - field_full_name
         - field_university_enrolment_numbe
         - field_university_level
@@ -66,7 +68,7 @@ third_party_settings:
       label: 'Registration Fields'
       region: content
       parent_name: ''
-      weight: 0
+      weight: 1
       format_type: details
       format_settings:
         classes: ''
@@ -82,7 +84,7 @@ third_party_settings:
       label: Personal
       region: content
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: details
       format_settings:
         classes: ''
@@ -99,13 +101,13 @@ bundle: user
 mode: default
 content:
   account:
-    weight: 3
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   field_academic_certificate:
     type: options_select
-    weight: 7
+    weight: 12
     region: content
     settings: {  }
     third_party_settings:
@@ -127,9 +129,15 @@ content:
             effect: show
             effect_options: {  }
             selector: ''
+  field_account_type:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_company_name:
     type: string_textfield
-    weight: 14
+    weight: 19
     region: content
     settings:
       size: 60
@@ -155,7 +163,7 @@ content:
             selector: ''
   field_company_summary:
     type: string_textarea
-    weight: 21
+    weight: 26
     region: content
     settings:
       rows: 5
@@ -181,7 +189,7 @@ content:
             selector: ''
   field_company_website:
     type: link_default
-    weight: 24
+    weight: 28
     region: content
     settings:
       placeholder_url: ''
@@ -207,7 +215,7 @@ content:
             selector: ''
   field_cr_number:
     type: number
-    weight: 15
+    weight: 20
     region: content
     settings:
       placeholder: ''
@@ -232,7 +240,7 @@ content:
             selector: ''
   field_delegation_letter:
     type: image_image
-    weight: 20
+    weight: 25
     region: content
     settings:
       progress_indicator: throbber
@@ -258,7 +266,7 @@ content:
             selector: ''
   field_drupal:
     type: link_default
-    weight: 12
+    weight: 17
     region: content
     settings:
       placeholder_url: ''
@@ -284,7 +292,7 @@ content:
             selector: ''
   field_full_name:
     type: string_textfield
-    weight: 1
+    weight: 6
     region: content
     settings:
       size: 60
@@ -310,7 +318,7 @@ content:
             selector: ''
   field_github:
     type: link_default
-    weight: 11
+    weight: 16
     region: content
     settings:
       placeholder_url: ''
@@ -336,7 +344,7 @@ content:
             selector: ''
   field_group_image:
     type: image_image
-    weight: 17
+    weight: 22
     region: content
     settings:
       progress_indicator: throbber
@@ -362,7 +370,7 @@ content:
             selector: ''
   field_group_name:
     type: string_textfield
-    weight: 16
+    weight: 21
     region: content
     settings:
       size: 60
@@ -388,7 +396,7 @@ content:
             selector: ''
   field_interests:
     type: options_select
-    weight: 4
+    weight: 9
     region: content
     settings: {  }
     third_party_settings:
@@ -412,7 +420,7 @@ content:
             selector: ''
   field_linkedin:
     type: link_default
-    weight: 10
+    weight: 15
     region: content
     settings:
       placeholder_url: ''
@@ -438,7 +446,7 @@ content:
             selector: ''
   field_organization_image:
     type: image_image
-    weight: 19
+    weight: 24
     region: content
     settings:
       progress_indicator: throbber
@@ -464,7 +472,7 @@ content:
             selector: ''
   field_organization_name:
     type: string_textfield
-    weight: 18
+    weight: 23
     region: content
     settings:
       size: 60
@@ -490,7 +498,7 @@ content:
             selector: ''
   field_practice_area:
     type: string_textfield
-    weight: 5
+    weight: 10
     region: content
     settings:
       size: 60
@@ -514,9 +522,16 @@ content:
             effect: show
             effect_options: {  }
             selector: ''
+  field_staff:
+    type: boolean_checkbox
+    weight: 29
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_summary:
     type: string_textarea
-    weight: 13
+    weight: 18
     region: content
     settings:
       rows: 5
@@ -542,7 +557,7 @@ content:
             selector: ''
   field_supported_open_source_tech:
     type: entity_reference_autocomplete
-    weight: 23
+    weight: 27
     region: content
     settings:
       match_operator: CONTAINS
@@ -570,7 +585,7 @@ content:
             selector: ''
   field_twitter:
     type: link_default
-    weight: 9
+    weight: 14
     region: content
     settings:
       placeholder_url: ''
@@ -596,7 +611,7 @@ content:
             selector: ''
   field_university_enrolment_numbe:
     type: number
-    weight: 2
+    weight: 7
     region: content
     settings:
       placeholder: ''
@@ -621,7 +636,7 @@ content:
             selector: ''
   field_university_level:
     type: string_textfield
-    weight: 3
+    weight: 8
     region: content
     settings:
       size: 60
@@ -647,7 +662,7 @@ content:
             selector: ''
   field_website:
     type: link_default
-    weight: 8
+    weight: 13
     region: content
     settings:
       placeholder_url: ''
@@ -673,7 +688,7 @@ content:
             selector: ''
   field_years_of_experience:
     type: number
-    weight: 6
+    weight: 11
     region: content
     settings:
       placeholder: ''
@@ -698,13 +713,13 @@ content:
             selector: ''
   path:
     type: path
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   user_picture:
     type: image_image
-    weight: 4
+    weight: 2
     region: content
     settings:
       progress_indicator: throbber
@@ -712,7 +727,6 @@ content:
     third_party_settings: {  }
 hidden:
   contact: true
-  field_account_type: true
   langcode: true
   language: true
   timezone: true

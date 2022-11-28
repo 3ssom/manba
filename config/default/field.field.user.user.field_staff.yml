@@ -1,0 +1,24 @@
+uuid: d8ef7095-51dd-4f46-b846-2f63f63d2d44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_staff
+  module:
+    - user
+id: user.user.field_staff
+field_name: field_staff
+entity_type: user
+bundle: user
+label: Staff
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

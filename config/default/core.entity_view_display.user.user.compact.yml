@@ -21,6 +21,7 @@ dependencies:
     - field.field.user.user.field_organization_image
     - field.field.user.user.field_organization_name
     - field.field.user.user.field_practice_area
+    - field.field.user.user.field_staff
     - field.field.user.user.field_summary
     - field.field.user.user.field_supported_open_source_tech
     - field.field.user.user.field_twitter
@@ -69,6 +70,7 @@ hidden:
   field_organization_image: true
   field_organization_name: true
   field_practice_area: true
+  field_staff: true
   field_summary: true
   field_supported_open_source_tech: true
   field_twitter: true
