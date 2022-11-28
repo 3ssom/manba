@@ -2136,6 +2136,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .slider_content {
   color: #fff;
   padding-top: 200px;
+  margin: auto;
 }
 
 @-webkit-keyframes animateUpDown {
