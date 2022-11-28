@@ -28,6 +28,7 @@
         "drupal/devel": "^5.0",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/field_group": "^3.4",
+        "drupal/field_permissions": "^1.2",
         "drupal/fivestar": "^1.0@alpha",
         "drupal/pathauto": "^1.11",
         "drupal/realistic_dummy_content": "^3.1",

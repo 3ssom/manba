@@ -20,6 +20,7 @@ dependencies:
     - field.field.user.user.field_organization_image
     - field.field.user.user.field_organization_name
     - field.field.user.user.field_practice_area
+    - field.field.user.user.field_staff
     - field.field.user.user.field_summary
     - field.field.user.user.field_supported_open_source_tech
     - field.field.user.user.field_twitter
@@ -210,6 +211,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 7
+    region: content
+  field_staff:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 26
     region: content
   field_summary:
     type: basic_string
