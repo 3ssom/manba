@@ -26,12 +26,7 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   comment: true
@@ -41,3 +36,4 @@ hidden:
   field_rate: true
   field_software_license: true
   langcode: true
+  links: true

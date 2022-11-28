@@ -7,11 +7,12 @@ dependencies:
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_schedule
+    - image.style.large
     - node.type.event
   module:
     - datetime
-    - image
     - link
+    - svg_image
     - text
     - user
 id: node.event.default
@@ -28,10 +29,14 @@ content:
     region: content
   field_event_image:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: large
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
       image_loading:
         attribute: lazy
     third_party_settings: {  }

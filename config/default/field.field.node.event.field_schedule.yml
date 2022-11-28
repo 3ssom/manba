@@ -11,7 +11,7 @@ id: node.event.field_schedule
 field_name: field_schedule
 entity_type: node
 bundle: event
-label: Schedule
+label: 'Event Date'
 description: ''
 required: true
 translatable: false

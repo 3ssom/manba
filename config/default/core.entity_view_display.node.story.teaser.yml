@@ -52,11 +52,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
 hidden:
   comment: true
   field_a_summary_of_the_organizat: true
@@ -71,3 +66,4 @@ hidden:
   field_the_number_of_beneficiarie: true
   field_the_number_of_members_of_t: true
   langcode: true
+  links: true

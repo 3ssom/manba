@@ -11,12 +11,13 @@ dependencies:
     - field.field.node.project.field_project_logo
     - field.field.node.project.field_rate
     - field.field.node.project.field_software_license
+    - image.style.large
     - node.type.project
   module:
     - comment
     - fivestar
-    - image
     - link
+    - svg_image
     - text
     - user
 id: node.project.default
@@ -29,7 +30,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
   comment:
     type: comment_default
@@ -38,7 +39,7 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 106
+    weight: 7
     region: content
   field_project_category:
     type: entity_reference_label
@@ -46,7 +47,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 104
+    weight: 3
     region: content
   field_project_link:
     type: link
@@ -58,18 +59,22 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 103
+    weight: 2
     region: content
   field_project_logo:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: large
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
   field_rate:
     type: fivestar_stars
@@ -79,7 +84,7 @@ content:
       display_format: average
       fivestar_widget: basic
     third_party_settings: {  }
-    weight: 107
+    weight: 5
     region: content
   field_software_license:
     type: entity_reference_label
@@ -87,12 +92,12 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 105
+    weight: 4
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 6
     region: content
 hidden:
   langcode: true

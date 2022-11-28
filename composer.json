@@ -16,7 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
-        "drupal/admin_toolbar": "^3.2",
+        "drupal/admin_toolbar": "^3.3",
         "drupal/better_exposed_filters": "^6.0",
         "drupal/bootstrap_barrio": "^5.1",
         "drupal/calendar": "^1.0@alpha",
