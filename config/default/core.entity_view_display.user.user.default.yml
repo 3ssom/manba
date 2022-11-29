@@ -212,16 +212,6 @@ content:
     third_party_settings: {  }
     weight: 7
     region: content
-  field_staff:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 26
-    region: content
   field_summary:
     type: basic_string
     label: above
@@ -308,4 +298,5 @@ content:
     weight: 0
     region: content
 hidden:
+  field_staff: true
   langcode: true

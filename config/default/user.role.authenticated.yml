@@ -7,6 +7,7 @@ dependencies:
   module:
     - comment
     - contact
+    - field_permissions
     - filter
     - search
     - shortcut
@@ -27,3 +28,4 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view field_staff'
