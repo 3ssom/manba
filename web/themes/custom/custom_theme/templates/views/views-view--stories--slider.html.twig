@@ -39,25 +39,25 @@
   dom_id ? 'js-view-dom-id-' ~ dom_id
 ] %}
 {% if rows %}
-  <section class="app_testimonial_area">
-    <div class="text_shadow" data-line="STORY"></div>
-    <div class="container nav_container">
-      <div class="shap one"></div>
-      <div class="shap two"></div>
-      <div class="app_testimonial_slider owl-carousel">
-        {% if header %}
-          {{ header }}
-        {% endif %}
-        {{ rows }}
-        {% if more %}
-          {{ more }}
-        {% endif %}
-        {% if footer %}
-          <div class="view-footer">
-            {{ footer }}
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  </section>
+	<section class="app_testimonial_area">
+		<div class="text_shadow" data-line="STORY"></div>
+		<div class="container nav_container">
+			<div class="shap one"></div>
+			<div class="shap two"></div>
+			{% if header %}
+				{{ header }}
+			{% endif %}
+			<div class="app_testimonial_slider owl-carousel">
+				{{ rows }}
+				{% if more %}
+					{{ more }}
+				{% endif %}
+				{% if footer %}
+					<div class="view-footer">
+						{{ footer }}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</section>
 {% endif %}
