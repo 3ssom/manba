@@ -15,14 +15,13 @@ jQuery(function ($) {
 
     $(".search-btn").on("click", function (e) {
       e.preventDefault();
-      var tags = tagify.getCleanValue();
+      let tags = tagify.getCleanValue();
       const keywords = [];
       for (i = 0; i < tags.length; ++i) {
         keywords.push(tags[i].value);
       }
       if (keywords.length > 0) {
-        console.log(keywords);
-        window.location = "search/node?keys=" + keywords.join(" ");
+        window.location = drupalSettings.lang_code + "/search/node?keys=" + keywords.join(" ");
       }
     });
   }

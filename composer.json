@@ -31,6 +31,7 @@
         "drupal/field_permissions": "^1.2",
         "drupal/fivestar": "^1.0@alpha",
         "drupal/pathauto": "^1.11",
+        "drupal/rabbit_hole": "^1.0@beta",
         "drupal/realistic_dummy_content": "^3.1",
         "drupal/smtp": "^1.2",
         "drupal/svg_image": "^1.16",

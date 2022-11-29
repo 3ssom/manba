@@ -51,9 +51,12 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  rabbit_hole: 0
   rdf: 0
   realistic_dummy_content: 0
   realistic_dummy_content_api: 0
+  rh_node: 0
+  rh_taxonomy: 0
   search: 0
   shortcut: 0
   smtp: 0

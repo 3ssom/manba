@@ -41,6 +41,7 @@ class SearchBlock extends BlockBase {
         'drupalSettings' => array(
           'suggestion' => array_values($suggestion),
           'results' => array_values($results),
+          'lang_code' => $language_id,
         ),
       ),
       '#cache' => ['tags' => ['taxonomy_term_list:keywords']],

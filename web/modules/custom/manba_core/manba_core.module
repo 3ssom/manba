@@ -6,9 +6,10 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+  use Drupal\user\Entity\User;
 
 
-/**
+  /**
  * Implements hook_theme().
  */
 function manba_core_theme()
@@ -118,7 +119,8 @@ function manba_core_form_alter(&$form, FormStateInterface $form_state, $form_id)
     $form['#attributes']['novalidate'] = 'novalidate';
   }
   if ($form_id == 'user_form') {
-    if (!\Drupal::currentUser()->isAnonymous()) {
+    $account = User::load(\Drupal::currentUser()->id());
+    if (!$account->hasRole('administrator')) {
       $form['field_account_type']['#disabled'] = 'disabled';
     }
   }
