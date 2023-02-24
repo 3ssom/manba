@@ -73,3 +73,21 @@ msgstr "أو بإمكانك إدخال الكلمات التي تريد البح
 
 msgid "Write tags to add below"
 msgstr "ادخل الوسوم هنا لإضافتها بالاسفل"
+
+msgid "Registration Confirmation"
+msgstr "تأكيد التسجيل"
+
+msgid "Welcome to the Manba3 community <br> We inform you that your registration has been successful and your account will be reviewed and approved as soon as possible"
+msgstr "مرحباً بك في مجتمع منبع <br> نفيدكم بأنه تم تسجيلكم بنجاح سيتم مراجعة بياناتكم والموافقة عليها في أقرب وقت ممكن"
+
+msgid ""
+"Thank you for applying for an account. Your account is currently "
+"pending approval by the site administrator.<br />In the meantime, a "
+"welcome message with further instructions has been sent to your email "
+"address."
+msgstr ""
+"شكرا لك على التقديم للحصول على حساب. "
+"حسابك في انتظار الموافقة حاليًا من "
+"قِبل إدارة الموقع. <br /> في غضون ذلك ، تم "
+"إرسال رسالة ترحيب تحتوي على مزيد من "
+"الإرشادات إلى عنوان بريدك الإلكتروني."

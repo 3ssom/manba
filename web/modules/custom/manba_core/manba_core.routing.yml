@@ -13,3 +13,11 @@ manba_core.site_settings_form:
     _title: 'Settings'
   requirements:
     _permission: 'access site settings form'
+
+manba_core.thanks_page:
+  path: '/registration-confirmation'
+  defaults:
+    _title: 'Registration Confirmation'
+    _controller: '\Drupal\manba_core\Controller\RegistrationConfirmation::build'
+  requirements:
+    _user_is_logged_in: 'FALSE'
