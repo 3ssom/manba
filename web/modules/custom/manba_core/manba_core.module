@@ -6,10 +6,10 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
-  use Drupal\user\Entity\User;
+use Drupal\user\Entity\User;
 
 
-  /**
+/**
  * Implements hook_theme().
  */
 function manba_core_theme()
@@ -117,6 +117,7 @@ function manba_core_form_alter(&$form, FormStateInterface $form_state, $form_id)
     unset($form['field_github']['widget'][0]['uri']['#description']);
     unset($form['field_twitter']['widget'][0]['uri']['#description']);
     $form['#attributes']['novalidate'] = 'novalidate';
+    $form['actions']['submit']['#submit'][] = '_manba_core_user_register_form_submit';
   }
   if ($form_id == 'user_form') {
     $account = User::load(\Drupal::currentUser()->id());
@@ -124,4 +125,12 @@ function manba_core_form_alter(&$form, FormStateInterface $form_state, $form_id)
       $form['field_account_type']['#disabled'] = 'disabled';
     }
   }
+}
+
+/**
+ * Custom submit handler for user_register_form.
+ */
+function _manba_core_user_register_form_submit(&$form, FormStateInterface $form_state)
+{
+  $form_state->setRedirect('manba_core.thanks_page');
 }

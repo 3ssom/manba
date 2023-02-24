@@ -12,3 +12,9 @@ display:
             format: full_html
       title: الخبراء
       use_more_text: 'جميع الخبراء'
+  page_1:
+    display_options:
+      title: 'فريق منبع'
+      empty:
+        area_text_custom:
+          content: 'لايوجد اعضاء ضمن فريق العمل حاليا'
