@@ -72,6 +72,7 @@ module:
   update: 0
   user: 0
   views_bootstrap: 0
+  views_bulk_operations: 0
   views_templates: 0
   views_ui: 0
   votingapi: 0
