@@ -8860,9 +8860,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-<<<<<<< HEAD
     "plugin-api-version": "2.3.0"
-=======
-    "plugin-api-version": "2.0.0"
->>>>>>> origin/create_register_managemet_page
 }
