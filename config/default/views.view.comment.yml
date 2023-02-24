@@ -531,7 +531,7 @@ display:
             next: 'التالية ›'
             previous: '‹ السابقة'
             first: '« الأولى'
-            last: 'last »'
+            last: 'الأخيرة »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
