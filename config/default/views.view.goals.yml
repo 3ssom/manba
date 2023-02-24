@@ -414,7 +414,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -546,7 +546,7 @@ display:
         type: views_bootstrap_grid
         options:
           grouping: {  }
-          row_class: 'row mb_30'
+          row_class: 'row mb_40'
           default_row_class: true
           col_xs: col-12
           col_sm: col-sm-6

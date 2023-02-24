@@ -9,7 +9,7 @@ dependencies:
 id: rwabtmhmt
 theme: custom_theme
 region: footer
-weight: -9
+weight: -12
 provider: null
 plugin: important_links_block
 settings:

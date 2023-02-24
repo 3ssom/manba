@@ -1,29 +1,29 @@
-uuid: deaefa5d-9d9e-484c-bace-e20a00591f92
+uuid: 3a07a026-69d7-4650-88ac-2f21ce209556
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_list_of_open_source_techno
-    - node.type.project
     - node.type.story
+    - taxonomy.vocabulary.apache
 id: node.story.field_list_of_open_source_techno
 field_name: field_list_of_open_source_techno
 entity_type: node
 bundle: story
 label: 'List Of Open Source Technologies Used'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      project: project
+      apache: apache
     sort:
-      field: title
-      direction: DESC
+      field: name
+      direction: asc
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

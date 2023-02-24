@@ -1,0 +1,14 @@
+uuid: 8c01e762-398b-4eb3-a6dd-5cf3dd07ff5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.apache
+id: taxonomy_vocabulary_apache
+entity_type_id: taxonomy_vocabulary
+entity_id: apache
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

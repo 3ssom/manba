@@ -9,7 +9,7 @@ dependencies:
 id: parmg_block
 theme: custom_theme
 region: footer
-weight: -10
+weight: -14
 provider: null
 plugin: parmg_block
 settings:

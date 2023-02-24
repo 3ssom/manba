@@ -1,0 +1,33 @@
+uuid: ff767699-1893-4886-b2fa-50b7c2596519
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7460c5cd-45ea-4c82-bfa7-a4ee77cfeba2'
+  module:
+    - block_content
+    - language
+  theme:
+    - custom_theme
+id: mjtmdrwbalalswdyt
+theme: custom_theme
+region: footer
+weight: -13
+provider: null
+plugin: 'block_content:7460c5cd-45ea-4c82-bfa7-a4ee77cfeba2'
+settings:
+  id: 'block_content:7460c5cd-45ea-4c82-bfa7-a4ee77cfeba2'
+  label: 'مجتمع دروبال السعودية'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      ar: ar

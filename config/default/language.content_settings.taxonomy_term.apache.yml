@@ -1,0 +1,11 @@
+uuid: 68af85ab-3639-46fe-a326-fe77376985a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.apache
+id: taxonomy_term.apache
+target_entity_type_id: taxonomy_term
+target_bundle: apache
+default_langcode: site_default
+language_alterable: false

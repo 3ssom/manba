@@ -1896,11 +1896,11 @@ display:
           grouping: {  }
           row_class: ''
           default_row_class: false
-          col_xs: col-1
+          col_xs: none
           col_sm: col-sm-2
-          col_md: col-md-3
-          col_lg: col-lg-3
-          col_xl: col-xl-3
+          col_md: col-md-2
+          col_lg: col-lg-4
+          col_xl: col-xl-4
       row:
         type: fields
         options:

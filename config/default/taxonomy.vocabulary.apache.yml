@@ -1,0 +1,8 @@
+uuid: d5220adc-5028-4509-a3af-5c37ac8e3de6
+langcode: en
+status: true
+dependencies: {  }
+name: 'List Of Open Source Technologies Used'
+vid: apache
+description: ''
+weight: 0

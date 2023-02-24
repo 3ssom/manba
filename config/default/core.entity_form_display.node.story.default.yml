@@ -22,8 +22,8 @@ dependencies:
   module:
     - comment
     - datetime
-    - image
     - path
+    - svg_image
     - text
 id: node.story.default
 targetEntityType: node
@@ -87,7 +87,7 @@ content:
     third_party_settings: {  }
   field_list_of_open_source_techno:
     type: entity_reference_autocomplete
-    weight: 134
+    weight: 137
     region: content
     settings:
       match_operator: CONTAINS

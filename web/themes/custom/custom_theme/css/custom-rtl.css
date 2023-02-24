@@ -168,3 +168,65 @@ div.fivestar-widget .cancel, div.fivestar-widget .star{
   padding-right: 40px;
   padding-left: 0px;
 }
+
+
+/**Homepage - YY AR changes **/
+
+div#block-views-block-goals-list .view-content.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+div#views-bootstrap-goals-list {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-inline-start: 60px;
+}
+
+div#views-bootstrap-why-open-sources-list .p_service_item *{
+    text-align: right !important;
+}
+
+div#views-bootstrap-why-open-sources-list  .p_service_item {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+div#views-bootstrap-why-open-sources-list  .row{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+div#views-bootstrap-why-open-sources-list  .row .col-1{
+    min-width: 230px;
+}
+
+.experts_team_area .col-lg-12.text-center .ti-arrow-right:before,
+div#block-views-block-projects-slider .app_service_item  .ti-arrow-right:before {
+    content: "\e629";
+}
+
+
+div#block-views-block-projects-slider .app_service_item p, .app_service_item h5, .app_service_item a {
+    text-align: right;
+    width: 100%;
+}
+div#block-views-block-projects-slider .app_service_item .learn_btn_two {
+    color: #222d39;
+    font-size: 14px;
+    text-align: left;
+}
+
+.experts_team_area .col-lg-12.text-center i,
+div#block-views-block-projects-slider .app_service_item .learn_btn_two i {
+    font-size: 13px;
+    padding-left: 5px;
+    vertical-align: middle;
+    float: left;
+    margin: 5px;
+}

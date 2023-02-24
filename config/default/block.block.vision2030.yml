@@ -9,7 +9,7 @@ dependencies:
 id: vision2030
 theme: custom_theme
 region: footer
-weight: -7
+weight: -10
 provider: null
 plugin: vision2030_block
 settings:

@@ -84,7 +84,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -240,7 +240,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "\t\t<div class=\"p_service_item pr_70 wow fadeInLeft\" data-wow-delay=\"0.3s\">\r\n\t\t\t{{ field_page_image }}\r\n\t\t\t<h5 class=\"f_600 f_p t_color3\">{{ title }}</h5>\r\n\t\t\t<p class=\"f_300\">{{ body }}.</p>\r\n\t\t</div>"
+            text: "\t\t<div class=\"p_service_item pr_70 wow fadeInLeft\" data-wow-delay=\"0.3s\">\r\n\t\t\t<div class=\"hidden d-none\">{{ field_page_image }}</div>\r\n\t\t\t<h5 class=\"f_600 f_p t_color3\">{{ title }}</h5>\r\n\t\t\t<p class=\"f_300\">{{ body }}.</p>\r\n\t\t</div>"
             make_link: false
             path: ''
             absolute: false
@@ -435,9 +435,9 @@ display:
           default_row_class: false
           col_xs: col-1
           col_sm: col-sm-2
-          col_md: col-md-3
-          col_lg: col-lg-3
-          col_xl: col-xl-3
+          col_md: col-md-2
+          col_lg: col-lg-2
+          col_xl: col-xl-2
       row:
         type: fields
       query:
