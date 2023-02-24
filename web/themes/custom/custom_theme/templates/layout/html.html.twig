@@ -42,7 +42,7 @@ db_offline ? 'db-offline',
         <js-placeholder token="{{ placeholder_token|raw }}">
   </head>
   <body{{ attributes.addClass(body_classes) }}>
-    <div id="preloader">
+    {# <div id="preloader">
       <div id="ctn-preloader" class="ctn-preloader">
         <div class="animation-preloader">
           <div class="spinner"></div>
@@ -65,7 +65,7 @@ db_offline ? 'db-offline',
           </div>
         </div>
       </div>
-    </div>
+    </div> #}
     {% if html_attributes['dir'] == 'rtl' %}
     {{ attach_library('custom_theme/global-rtl-styling') }}
     {% endif %}
