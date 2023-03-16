@@ -2781,11 +2781,11 @@ display:
           grouping: {  }
           row_class: ''
           default_row_class: false
-          col_xs: none
+          col_xs: col-12
           col_sm: col-sm-2
-          col_md: col-md-2
-          col_lg: col-lg-4
-          col_xl: col-xl-4
+          col_md: col-md-4
+          col_lg: col-lg-3
+          col_xl: col-xl-3
       row:
         type: fields
         options:
