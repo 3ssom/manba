@@ -20,10 +20,6 @@
   .section_container .intro_content p {
     margin-bottom: 40px;
   }
-
-  .saas_features_item {
-    padding: 0px;
-  }
 }
 
 @media (max-width: 1550px) {

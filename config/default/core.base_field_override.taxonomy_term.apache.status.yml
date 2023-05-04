@@ -1,0 +1,22 @@
+uuid: 3e69d3e7-a07b-4473-a6df-5fa8836a03fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.apache
+id: taxonomy_term.apache.status
+field_name: status
+entity_type: taxonomy_term
+bundle: apache
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
