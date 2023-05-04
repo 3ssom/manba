@@ -1,0 +1,18 @@
+uuid: a19c91f8-52c7-417f-a61b-f07e69c6ba0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.apache
+id: taxonomy_term.apache.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: apache
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+uuid: 9461df92-b703-40fc-a111-88cd11450d95
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.apache
+  module:
+    - path
+id: taxonomy_term.apache.path
+field_name: path
+entity_type: taxonomy_term
+bundle: apache
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
