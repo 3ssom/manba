@@ -596,3 +596,8 @@ article .field__label , .field--type-entity-reference .field__label{
 .user-logged-in .form-item-field-account-type{
   margin-bottom: 1rem !important;
 }
+
+div#views-bootstrap-goals-list .row {
+  justify-content: center;
+  }
+  
