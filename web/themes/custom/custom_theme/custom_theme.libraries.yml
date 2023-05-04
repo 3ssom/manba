@@ -26,8 +26,8 @@ global-styling:
 
 bootstrap:
   js:
-    js/propper.js: {}
     js/bootstrap.min.js: {}
+    js/propper.js: {}
   css:
     theme:
       css/bootstrap.min.css: {}
