@@ -281,7 +281,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 6
+          items_per_page: 4
       exposed_form:
         type: basic
         options:
@@ -431,13 +431,13 @@ display:
         type: views_bootstrap_grid
         options:
           grouping: {  }
-          row_class: '<div class="row p_service_info">'
+          row_class: 'row p_service_info'
           default_row_class: false
-          col_xs: col-1
-          col_sm: col-sm-2
-          col_md: col-md-2
-          col_lg: col-lg-2
-          col_xl: col-xl-2
+          col_xs: col-12
+          col_sm: col-sm-6
+          col_md: col-md-4
+          col_lg: col-lg-3
+          col_xl: col-xl-3
       row:
         type: fields
       query:
