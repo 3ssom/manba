@@ -5,22 +5,25 @@
 .btn_get,
 .f_widget.about-widget .f_list li a,
 .views-exposed-form .form-control,
-.faq_content .tab-pane .card .card-header .btn ,
-.tagify--outside .tagify__input{
+.faq_content .tab-pane .card .card-header .btn,
+.tagify--outside .tagify__input {
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 body {
   font: 400 16px/26px "IBM Plex Sans Arabic", sans-serif
 }
+
 .tagify .tagify__input {
   direction: rtl;
   text-align: right;
 }
+
 .tagify__dropdown {
   direction: rtl;
   text-align: right;
 }
+
 select,
 input,
 .form-control.text-full:not(.form-textarea),
@@ -131,8 +134,9 @@ article,
   right: 260px;
   left: auto;
 }
-.leaf.l_right{
-  left:0;
+
+.leaf.l_right {
+  left: 0;
   right: auto;
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
@@ -140,6 +144,7 @@ article,
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+
 .slider_area .middle_shape {
   right: auto;
   left: 0;
@@ -150,21 +155,26 @@ article,
   -o-transform: rotate(180deg);
 }
 
-span.expert-promote{
+span.expert-promote {
   right: 10px;
   left: auto;
 }
+
 span.expert-promote i {
   margin-left: 4px;
 }
-div.fivestar-widget .cancel, div.fivestar-widget .star{
+
+div.fivestar-widget .cancel,
+div.fivestar-widget .star {
   float: right;
 }
-.blog-sidebar .widget.widget-recent-post .post_item .media-body{
+
+.blog-sidebar .widget.widget-recent-post .post_item .media-body {
   padding-left: 0px;
   padding-right: 20px;
 }
-.blog-sidebar{
+
+.blog-sidebar {
   padding-right: 40px;
   padding-left: 0px;
 }
@@ -173,8 +183,8 @@ div.fivestar-widget .cancel, div.fivestar-widget .star{
 /**Homepage - YY AR changes **/
 
 div#block-views-block-goals-list .view-content.row {
-    margin: 0 !important;
-    padding: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 div#views-bootstrap-goals-list {
@@ -183,49 +193,61 @@ div#views-bootstrap-goals-list {
     width: 100%;
 }
 
-div#views-bootstrap-why-open-sources-list .p_service_item *{
-    text-align: right !important;
+div#views-bootstrap-why-open-sources-list .p_service_item * {
+  text-align: right !important;
 }
 
-div#views-bootstrap-why-open-sources-list  .p_service_item {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+div#views-bootstrap-why-open-sources-list .p_service_item {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-div#views-bootstrap-why-open-sources-list  .row{
-    margin: 0;
-    padding: 0;
-    width: 100%;
+div#views-bootstrap-why-open-sources-list .row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 
 
-div#views-bootstrap-why-open-sources-list  .row .col-1{
-    min-width: 230px;
+div#views-bootstrap-why-open-sources-list .row .col-1 {
+  min-width: 230px;
 }
 
 .experts_team_area .col-lg-12.text-center .ti-arrow-right:before,
-div#block-views-block-projects-slider .app_service_item  .ti-arrow-right:before {
-    content: "\e629";
+div#block-views-block-projects-slider .app_service_item .ti-arrow-right:before {
+  content: "\e629";
 }
 
 
-div#block-views-block-projects-slider .app_service_item p, .app_service_item h5, .app_service_item a {
-    text-align: right;
-    width: 100%;
+div#block-views-block-projects-slider .app_service_item p,
+.app_service_item h5,
+.app_service_item a {
+  text-align: right;
+  width: 100%;
 }
+
 div#block-views-block-projects-slider .app_service_item .learn_btn_two {
-    color: #222d39;
-    font-size: 14px;
-    text-align: left;
+  color: #222d39;
+  font-size: 14px;
+  text-align: left;
 }
 
 .experts_team_area .col-lg-12.text-center i,
 div#block-views-block-projects-slider .app_service_item .learn_btn_two i {
-    font-size: 13px;
-    padding-left: 5px;
-    vertical-align: middle;
-    float: left;
-    margin: 5px;
+  font-size: 13px;
+  padding-left: 5px;
+  vertical-align: middle;
+  float: left;
+  margin: 5px;
+}
+
+@media (min-width: 1550px) {
+  .footer_dark_one .footer_top {
+    text-align: right;
+  }
+  .f_widget.about-widget .f_list{
+    padding-right: 0px;
+  }
 }

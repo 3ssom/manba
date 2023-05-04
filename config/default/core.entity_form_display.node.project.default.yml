@@ -46,10 +46,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_project_category:
-    type: options_select
+    type: entity_reference_autocomplete
     weight: 12
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_project_link:
     type: link_default
@@ -68,7 +72,7 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
   field_software_license:
-    type: options_select
+    type: options_buttons
     weight: 13
     region: content
     settings: {  }

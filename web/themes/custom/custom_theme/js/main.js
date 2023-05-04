@@ -209,22 +209,22 @@
       app_service_info.owlCarousel({
         rtl: rtl,
         margin: 10,
-  //      items: 3,
+        //      items: 3,
 
-        responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
-        }
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          600: {
+            items: 3,
+            nav: false,
+          },
+          1000: {
+            items: 4,
+            nav: true,
+            loop: false,
+          },
         },
         autoplaySpeed: true,
         responsiveClass: true,
