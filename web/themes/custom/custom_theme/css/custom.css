@@ -200,6 +200,7 @@ nav.language-switcher-language-url a.language-link {
 #mustforms #progressbar li:nth-child(2):after {
   top: 0px
 }
+
 span.elm-typed.w_color {
   font-weight: bold;
 }
@@ -345,8 +346,8 @@ select,
   margin-bottom: 1em;
   transition: .1s;
   margin-top: 0px;
-  margin-right:0px;
-  margin-left:0px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .tagify--outside .tagify__input:hover {
@@ -383,6 +384,7 @@ tags.tagify {
 .mailchimp {
   margin-top: 20px;
 }
+
 .js-form-item.js-form-type-item.form-type-item.js-form-item-.form-item-.form-no-label.mb-3 {
   margin: 0 !important;
 }
@@ -411,14 +413,18 @@ span.expert-promote i {
   display: flex;
   padding: 0px;
 }
+
 .calender-pager ul.js-pager__items li {
   padding: 2px 22px;
-  border: 1px solid var(--main-color);;
+  border: 1px solid var(--main-color);
+  ;
   margin: 0 0 0 -1px;
 }
+
 .calender-pager ul.js-pager__items li a {
   color: var(--main-color);
 }
+
 .calender-pager li.pager__item.pager__item--previous {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -433,7 +439,8 @@ tr.date-box {
   border-bottom: none;
 }
 
-.calendar-calendar .month-view .full tr td.multi-day, .calendar-calendar .month-view .full tr td.single-day{
+.calendar-calendar .month-view .full tr td.multi-day,
+.calendar-calendar .month-view .full tr td.single-day {
   padding: 20px 0px;
 }
 
@@ -441,7 +448,7 @@ tr.date-box {
   overflow-wrap: break-word;
 }
 
-.field--type-entity-reference a{
+.field--type-entity-reference a {
   background: #e7e7e7;
   padding: 10px 20px;
   display: inline-block;
@@ -452,6 +459,7 @@ tr.date-box {
 .field.field--name-field-project-link {
   margin-bottom: 30px;
 }
+
 article.comment {
   width: 100%;
   text-align: right;
@@ -467,11 +475,14 @@ article.comment {
   z-index: 9999;
   right: -12px;
 }
+
 .nav_container_projects .owl-prev {
   z-index: 9999;
   left: -12px;
 }
-button.owl-next.disabled , button.owl-prev.disabled {
+
+button.owl-next.disabled,
+button.owl-prev.disabled {
   opacity: 0.2;
 }
 
@@ -481,7 +492,8 @@ button.owl-next.disabled , button.owl-prev.disabled {
   z-index: 1;
 }
 
-.nav_container_projects .owl-prev, .nav_container_projects .owl-next {
+.nav_container_projects .owl-prev,
+.nav_container_projects .owl-next {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -503,7 +515,8 @@ button.owl-next.disabled , button.owl-prev.disabled {
   cursor: pointer;
 }
 
-.nav_container_projects .owl-prev:hover, .nav_container_projects .owl-next:hover {
+.nav_container_projects .owl-prev:hover,
+.nav_container_projects .owl-next:hover {
   background: #4069eb;
   color: #fff;
   -webkit-box-shadow: none;
@@ -527,28 +540,33 @@ button.owl-next.disabled , button.owl-prev.disabled {
 .ex_team_item .hover_content {
   cursor: auto;
 }
+
 ol.breadcrumb {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.breadcrumb-item.active{
+
+.breadcrumb-item.active {
   color: #fff;
 }
-.breadcrumb-item+.breadcrumb-item::before{
+
+.breadcrumb-item+.breadcrumb-item::before {
   color: #fff;
 }
+
 li.breadcrumb-item a:hover {
   color: #ddd;
 }
 
-article .field__label , .field--type-entity-reference .field__label{
+article .field__label,
+.field--type-entity-reference .field__label {
   font-weight: bold;
   margin-top: 20px;
   color: #2875bc;
 }
 
-[dir="rtl"] .node .field--type-image{
+[dir="rtl"] .node .field--type-image {
   float: none;
 }
 
@@ -562,7 +580,8 @@ article .field__label , .field--type-entity-reference .field__label{
   -ms-flex-item-align: center;
   align-self: center;
 }
-.blog-sidebar .widget.widget-recent-post .post_item + .post_item {
+
+.blog-sidebar .widget.widget-recent-post .post_item+.post_item {
   margin-top: 30px;
 }
 
@@ -582,17 +601,27 @@ article .field__label , .field--type-entity-reference .field__label{
   display: block;
   margin-top: 30px;
 }
-.sidebar .block{
+
+.sidebar .block {
   border: none;
   padding: 0px;
 }
-.sidebar h2{
+
+.sidebar h2 {
   font-size: 20px;
   color: #222d39;
   font-weight: 500;
   line-height: 1.2;
 }
 
-.user-logged-in .form-item-field-account-type{
+.user-logged-in .form-item-field-account-type {
   margin-bottom: 1rem !important;
+}
+
+div#views-bootstrap-goals-list .row {
+  justify-content: center;
+}
+
+div#views-bootstrap-why-open-sources-list .row {
+  justify-content: center;
 }

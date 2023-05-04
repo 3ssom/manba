@@ -1,0 +1,18 @@
+uuid: 77cf9c16-47c7-4826-8850-64688c5d9047
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.apache
+id: taxonomy_term.apache.name
+field_name: name
+entity_type: taxonomy_term
+bundle: apache
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
